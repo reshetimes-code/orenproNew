@@ -10,7 +10,7 @@
       "slug": "orenai",
       "name": "OrenAI",
       "url": "https://orenai.onrender.com/",
-      "image": "/images/portfolio/orenai.png"
+      "image": "/images/portfolio/orenai-logo.png"
     },
     {
       "slug": "airo-demo",
@@ -34,13 +34,13 @@
       "slug": "bmtech",
       "name": "BM Tech",
       "url": "https://www.bmtech-ag.co.il/",
-      "image": "/images/portfolio/bmtech.jpg"
+      "image": "/images/portfolio/bmtech-logo.svg"
     },
     {
       "slug": "zarkor",
       "name": "Zarkor Catalog",
       "url": "https://zarkor-catalog.onrender.com/",
-      "image": "/images/portfolio/zarkor.png"
+      "image": "/images/portfolio/zarkor-logo.svg"
     },
     {
       "slug": "stannelclub",
@@ -52,19 +52,19 @@
       "slug": "go3d-coin",
       "name": "Coin",
       "url": "https://go3d.co.il/coin/",
-      "image": "/images/portfolio/go3d-coin.png"
+      "image": "/images/portfolio/go3d-coin-logo.svg"
     },
     {
       "slug": "hchc",
       "name": "HCHC",
       "url": "https://hchc.co.il/",
-      "image": "/images/portfolio/hchc.png"
+      "image": "/images/portfolio/hchc-logo.svg"
     },
     {
       "slug": "carscheck",
       "name": "Car Check",
       "url": "https://carscheck-1.onrender.com/",
-      "image": "/images/portfolio/carscheck.jpg"
+      "image": "/images/portfolio/carscheck-logo.svg"
     },
     {
       "slug": "skali",
@@ -88,13 +88,13 @@
       "slug": "tip-finance",
       "name": "Tip Finance",
       "url": "https://tip-finance.co.il/",
-      "image": "/images/portfolio/tip-finance.jpg"
+      "image": "/images/portfolio/tip-finance-logo.svg"
     },
     {
       "slug": "bay",
       "name": "Bay",
       "url": "https://bay.org.il/",
-      "image": "/images/portfolio/bay.jpg"
+      "image": "/images/portfolio/bay-logo.png"
     },
     {
       "slug": "novisisrael",
@@ -178,7 +178,7 @@
       "slug": "go3d-js-pro",
       "name": "JS Pro",
       "url": "https://go3d.co.il/js_pro/",
-      "image": "/images/portfolio/go3d-js-pro.jpg"
+      "image": "/images/portfolio/go3d-js-pro-logo.svg"
     },
     {
       "slug": "viva",
