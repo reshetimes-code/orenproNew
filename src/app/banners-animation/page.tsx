@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import ServiceHero from "@/components/ServiceHero";
 import VideoGrid from "@/components/VideoGrid";
-import { bannerVideos } from "@/data/videos";
+import { bannerVideos } from "@/content";
 
 export const metadata: Metadata = {
   title: "באנרים ואנימציה",

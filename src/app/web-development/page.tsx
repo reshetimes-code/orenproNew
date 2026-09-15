@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import ServiceHero from "@/components/ServiceHero";
 import PortfolioGrid from "@/components/PortfolioGrid";
-import { portfolioItems } from "@/data/portfolio";
+import { portfolioItems } from "@/content";
 
 export const metadata: Metadata = {
   title: "בניית אתרים ומערכות",

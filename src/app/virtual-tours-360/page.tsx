@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { ExternalLink, View } from "lucide-react";
 import ServiceHero from "@/components/ServiceHero";
-import { tourItems } from "@/data/portfolio";
+import { tourItems } from "@/content";
 
 export const metadata: Metadata = {
   title: "סיורים וירטואליים ב-360 מעלות",

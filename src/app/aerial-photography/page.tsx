@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import ServiceHero from "@/components/ServiceHero";
 import VideoGrid from "@/components/VideoGrid";
-import { aerialVideos } from "@/data/videos";
+import { aerialVideos } from "@/content";
 
 export const metadata: Metadata = {
   title: "צילומי אוויר ברחפן",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function AerialPhotographyPage() {
   return (
     <>
-      <ServiceHero title="צילומי אוויר ברחפן" image="/images/services/aerial-hero.jpg" videoId="iryhFg5PSWU" />
+      <ServiceHero title="צילומי אוויר ברחפן" image="/images/services/aerial-hero.jpg" />
 
       <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <div className="space-y-5 text-lg leading-relaxed text-muted">

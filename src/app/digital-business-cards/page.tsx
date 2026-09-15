@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import ServiceHero from "@/components/ServiceHero";
-import { digitalCardItems } from "@/data/portfolio";
+import { digitalCardItems } from "@/content";
 
 export const metadata: Metadata = {
   title: "כרטיסי ביקור דיגיטליים",

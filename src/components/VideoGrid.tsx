@@ -1,4 +1,4 @@
-import type { VideoItem } from "@/data/videos";
+import type { VideoItem } from "@/content";
 
 export default function VideoGrid({ items }: { items: VideoItem[] }) {
   return (

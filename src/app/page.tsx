@@ -4,7 +4,7 @@ import { MessageCircle, ArrowLeft } from "lucide-react";
 import ServiceTile from "@/components/ServiceTile";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import HeroVideoSlider from "@/components/HeroVideoSlider";
-import { portfolioItems } from "@/data/portfolio";
+import { portfolioItems } from "@/content";
 import { siteConfig } from "@/lib/site-config";
 
 const HERO_VIDEO_IDS = ["z2qXzFbaMeA", "fPjzwKHF2vI", "qTm3Jkg-B9g", "iryhFg5PSWU"];

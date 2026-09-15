@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import ServiceHero from "@/components/ServiceHero";
 import VideoGrid from "@/components/VideoGrid";
-import { videoEditingVideos } from "@/data/videos";
+import { videoEditingVideos } from "@/content";
 
 export const metadata: Metadata = {
   title: "עריכת סרטים",

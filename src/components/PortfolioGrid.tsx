@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
-import type { PortfolioItem } from "@/data/portfolio";
+import type { PortfolioItem } from "@/content";
+import RibbonBadge from "./RibbonBadge";
 
 export default function PortfolioGrid({ items }: { items: PortfolioItem[] }) {
   return (
@@ -26,6 +27,7 @@ export default function PortfolioGrid({ items }: { items: PortfolioItem[] }) {
               <ExternalLink size={14} />
             </span>
           </div>
+          {item.tag ? <RibbonBadge label={item.tag} color={item.tagColor} /> : null}
         </a>
       ))}
     </div>
