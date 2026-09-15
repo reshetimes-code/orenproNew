@@ -25,7 +25,7 @@ export default function JsonLd() {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "סיורים וירטואליים ב-360 מעלות" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "באנרים ואנימציה" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "עריכת סרטים" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "צילומי אוויר בדרון" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "צילומי אוויר ברחפן" } },
     ],
   };
 

@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import ServiceHero from "@/components/ServiceHero";
 
 export const metadata: Metadata = {
   title: "נעים מאוד - אורן שפייזר",
   description:
-    "אורן שפייזר - איש מדיה פרילנס עם ניסיון רב בבניית אתרים, עיצוב, אנימציה, עריכת סרטים וצילומי אוויר בדרון. עובד עם משרדי פרסום ולקוחות עצמאיים בכל הארץ.",
+    "אורן שפייזר - איש מדיה פרילנס עם ניסיון רב בבניית אתרים, עיצוב, אנימציה, עריכת סרטים וצילומי אוויר ברחפן. עובד עם משרדי פרסום ולקוחות עצמאיים בכל הארץ.",
   alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-      <h1 className="text-4xl font-extrabold sm:text-5xl">
-        <span className="text-gradient">נעים מאוד</span>
-      </h1>
+    <>
+      <ServiceHero title="נעים מאוד" image="/images/about/stock-bg.jpg" videoId="_Sh5XxP9iSg" />
 
-      <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted">
+      <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+      <div className="space-y-5 text-lg leading-relaxed text-muted">
         <p>
           אני אורן שפייזר, איש מדיה עם רקע רחב בעולמות הדיגיטל, שעובד כפרילנס ומשתף פעולה באופן שוטף עם שני משרדי
           פרסום בחיפה. סיימתי את לימודי העיצוב במכללה לעיצוב &quot;תלתן&quot; בחיפה, המשכתי בהתמחות בוובמאסטרינג
@@ -40,6 +40,7 @@ export default function AboutPage() {
           <Image src="/images/about/2.jpg" alt="ציוד צילום מקצועי" fill className="object-cover" />
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

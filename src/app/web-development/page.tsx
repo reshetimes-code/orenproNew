@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function WebDevelopmentPage() {
   return (
     <>
-      <ServiceHero title="בניית אתרים ומערכות" image="/images/services/website.jpg" />
+      <ServiceHero title="בניית אתרים ומערכות" image="/images/services/website.jpg" videoId="z2qXzFbaMeA" />
 
       <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <div className="space-y-5 text-lg leading-relaxed text-muted">

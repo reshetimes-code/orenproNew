@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function VirtualTours360Page() {
   return (
     <>
-      <ServiceHero title="סיורים וירטואליים ב-360 מעלות" image="/images/services/tours-360.jpg" />
+      <ServiceHero title="סיורים וירטואליים ב-360 מעלות" image="/images/services/tours-360.jpg" videoId="qTm3Jkg-B9g" />
 
       <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <div className="space-y-5 text-lg leading-relaxed text-muted">

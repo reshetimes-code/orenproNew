@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function VideoEditingPage() {
   return (
     <>
-      <ServiceHero title="עריכת סרטים" image="/images/services/video-editing.jpg" />
+      <ServiceHero title="עריכת סרטים" image="/images/services/video-editing.jpg" videoId="2GHiDnCgHeY" />
 
       <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <div className="space-y-5 text-lg leading-relaxed text-muted">
@@ -28,7 +28,7 @@ export default function VideoEditingPage() {
           href="/aerial-photography"
           className="mt-6 inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold transition hover:border-brand-cyan hover:text-brand-cyan"
         >
-          צילומי אוויר בדרון
+          צילומי אוויר ברחפן
           <ArrowLeft size={16} />
         </Link>
       </div>

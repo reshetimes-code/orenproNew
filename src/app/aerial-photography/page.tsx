@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceHero from "@/components/ServiceHero";
 
 export const metadata: Metadata = {
-  title: "צילומי אוויר בדרון",
+  title: "צילומי אוויר ברחפן",
   description:
     "צילום אוויר מקצועי עם רחפן - למעלה מעשור ניסיון. סרטי הדרכה, סרטי תדמית, קליפים מוזיקליים, סרטים תיעודיים וצילום אירועים.",
   alternates: { canonical: "/aerial-photography" },
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function AerialPhotographyPage() {
   return (
     <>
-      <ServiceHero title="צילומי אוויר בדרון" image="/images/services/aerial-hero.jpg" />
+      <ServiceHero title="צילומי אוויר ברחפן" image="/images/services/aerial-hero.jpg" videoId="iryhFg5PSWU" />
 
       <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <div className="space-y-5 text-lg leading-relaxed text-muted">

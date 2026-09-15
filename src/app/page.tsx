@@ -3,8 +3,11 @@ import Image from "next/image";
 import { MessageCircle, ArrowLeft } from "lucide-react";
 import ServiceTile from "@/components/ServiceTile";
 import PortfolioGrid from "@/components/PortfolioGrid";
+import HeroVideoSlider from "@/components/HeroVideoSlider";
 import { portfolioItems } from "@/data/portfolio";
 import { siteConfig } from "@/lib/site-config";
+
+const HERO_VIDEO_IDS = ["z2qXzFbaMeA", "fPjzwKHF2vI", "qTm3Jkg-B9g", "iryhFg5PSWU"];
 
 const services = [
   { href: "/web-development", title: "בניית אתרים ומערכות", image: "/images/services/website.jpg" },
@@ -12,15 +15,16 @@ const services = [
   { href: "/virtual-tours-360", title: "סיורים וירטואליים ב-360", image: "/images/services/tours-360.jpg" },
   { href: "/banners-animation", title: "באנרים ואנימציה", image: "/images/services/banners.jpg" },
   { href: "/video-editing", title: "עריכת סרטים", image: "/images/services/video-editing.jpg" },
-  { href: "/aerial-photography", title: "צילומי אוויר בדרון", image: "/images/services/aerial.jpg" },
+  { href: "/aerial-photography", title: "צילומי אוויר ברחפן", image: "/images/services/aerial.jpg" },
 ];
 
 export default function HomePage() {
   return (
     <>
       <section className="relative overflow-hidden border-b border-border">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_30%_20%,rgba(34,211,238,0.15),transparent_50%),radial-gradient(circle_at_80%_60%,rgba(249,115,22,0.12),transparent_50%)]" />
-        <div className="mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
+        <HeroVideoSlider videoIds={HERO_VIDEO_IDS} />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/60" />
+        <div className="relative z-10 mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
           <Image
             src="/images/logo.png"
             alt={siteConfig.name}

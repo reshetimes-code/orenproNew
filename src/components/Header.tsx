@@ -24,12 +24,12 @@ export default function Header() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-1 lg:flex">
+        <nav className="hidden flex-nowrap items-center gap-0.5 xl:flex">
           {navItems.map((item) => (
-            <div key={item.href} className="group relative">
+            <div key={item.href} className="group relative shrink-0">
               <Link
                 href={item.href}
-                className="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-foreground/85 transition-colors hover:bg-white/5 hover:text-brand-cyan"
+                className="flex items-center gap-1 whitespace-nowrap rounded-md px-2.5 py-2 text-[13px] font-medium text-foreground/85 transition-colors hover:bg-white/5 hover:text-brand-cyan"
               >
                 {item.label}
                 {"children" in item && item.children ? (
@@ -57,7 +57,7 @@ export default function Header() {
           href={siteConfig.whatsappHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden shrink-0 items-center gap-2 rounded-full bg-green-500/90 px-4 py-2 text-sm font-semibold text-white transition hover:bg-green-500 lg:inline-flex"
+          className="hidden shrink-0 items-center gap-2 rounded-full bg-green-500/90 px-4 py-2 text-sm font-semibold text-white transition hover:bg-green-500 xl:inline-flex"
         >
           <MessageCircle size={16} />
           וואטסאפ
@@ -66,7 +66,7 @@ export default function Header() {
         <button
           type="button"
           aria-label="פתח תפריט"
-          className="rounded-md p-2 text-foreground lg:hidden"
+          className="rounded-md p-2 text-foreground xl:hidden"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -74,7 +74,7 @@ export default function Header() {
       </div>
 
       {open ? (
-        <nav className="border-t border-border bg-background px-4 pb-4 lg:hidden">
+        <nav className="border-t border-border bg-background px-4 pb-4 xl:hidden">
           {navItems.map((item) => (
             <div key={item.href}>
               <div className="flex items-center justify-between">

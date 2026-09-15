@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function DigitalBusinessCardsPage() {
   return (
     <>
-      <ServiceHero title="כרטיסי ביקור דיגיטליים" image="/images/services/digital-card.jpg" />
+      <ServiceHero title="כרטיסי ביקור דיגיטליים" image="/images/services/digital-card.jpg" videoId="UvpcBqbLlcw" />
 
       <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <div className="space-y-5 text-lg leading-relaxed text-muted">

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function BannersAnimationPage() {
   return (
     <>
-      <ServiceHero title="באנרים ואנימציה" image="/images/services/banners-hero.jpg" />
+      <ServiceHero title="באנרים ואנימציה" image="/images/services/banners-hero.jpg" videoId="UkgK8FOH7mI" />
 
       <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <div className="space-y-5 text-lg leading-relaxed text-muted">

@@ -5,7 +5,7 @@ export const siteConfig = {
   domain: "orenpro.co.il",
   url: "https://orenpro.co.il",
   description:
-    "בניית אתרים ומערכות, כרטיסי ביקור דיגיטליים, סיורים וירטואליים ב-360 מעלות, באנרים ואנימציה, עריכת סרטים וצילומי אוויר בדרונים. עבודה מקצועית ומהירה, מותאמת אישית לעסק שלך.",
+    "בניית אתרים ומערכות, כרטיסי ביקור דיגיטליים, סיורים וירטואליים ב-360 מעלות, באנרים ואנימציה, עריכת סרטים וצילומי אוויר ברחפנים. עבודה מקצועית ומהירה, מותאמת אישית לעסק שלך.",
   phoneDisplay: "052-371-5599",
   phoneIntl: "972523715599",
   get telHref() {
@@ -33,6 +33,6 @@ export const navItems = [
   {
     label: "עריכת סרטים",
     href: "/video-editing",
-    children: [{ label: "צילומי אוויר בדרון", href: "/aerial-photography" }],
+    children: [{ label: "צילומי אוויר ברחפן", href: "/aerial-photography" }],
   },
 ] as const;
