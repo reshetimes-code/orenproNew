@@ -12,15 +12,19 @@ export default function PortfolioGrid({ items }: { items: PortfolioItem[] }) {
           href={item.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative aspect-video overflow-hidden rounded-lg border border-border bg-surface"
+          className="group relative aspect-video overflow-hidden rounded-lg border border-border bg-white"
         >
-          <Image
-            src={item.image}
-            alt={item.name}
-            fill
-            className="object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-75"
-            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
-          />
+          <div className="absolute inset-0 p-5 sm:p-6">
+            <div className="relative h-full w-full">
+              <Image
+                src={item.image}
+                alt={item.name}
+                fill
+                className="object-contain transition duration-500 group-hover:scale-105"
+                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
+              />
+            </div>
+          </div>
           <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition group-hover:opacity-100">
             <span className="flex items-center gap-1.5 p-3 text-sm font-medium text-white">
               {item.name}
