@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import ServiceHero from "@/components/ServiceHero";
+import VideoGrid from "@/components/VideoGrid";
+import { aerialVideos } from "@/data/videos";
 
 export const metadata: Metadata = {
   title: "צילומי אוויר ברחפן",
@@ -24,6 +26,13 @@ export default function AerialPhotographyPage() {
             אני עובד עם מגוון לקוחות ומבצע צילומים המתאימים לכל בקשה - שירותי צילום אוויר באיכות גבוהה, בזמינות
             גבוהה, במחירים הוגנים ובשירות אמין. צילום אווירי מרחפנים כמעט בכל מקום ובכל זמן.
           </p>
+        </div>
+      </div>
+
+      <div className="border-t border-border bg-surface/40 py-16">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <h2 className="mb-8 text-center text-2xl font-bold sm:text-3xl">מוזמנים להתרשם ממספר דוגמאות</h2>
+          <VideoGrid items={aerialVideos} />
         </div>
       </div>
     </>
