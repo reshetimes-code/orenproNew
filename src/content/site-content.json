@@ -4,7 +4,7 @@
       "slug": "mishpatly",
       "name": "Mishpatly",
       "url": "https://mishpatly.co.il/",
-      "image": "/images/portfolio/mishpatly.jpg"
+      "image": "/images/portfolio/mishpatly-logo.png"
     },
     {
       "slug": "orenai",
@@ -16,19 +16,19 @@
       "slug": "airo-demo",
       "name": "Airo",
       "url": "https://airo-demo.vercel.app/",
-      "image": "/images/portfolio/airo-demo.png"
+      "image": "/images/portfolio/airo-demo-logo.png"
     },
     {
       "slug": "aabb",
       "name": "AABB",
       "url": "https://aabb.co.il/",
-      "image": "/images/portfolio/aabb.png"
+      "image": "/images/portfolio/aabb-logo.png"
     },
     {
       "slug": "djorens",
       "name": "DJ Oren",
       "url": "https://djorens.co.il/",
-      "image": "/images/portfolio/djorens.png"
+      "image": "/images/portfolio/djorens-logo.png"
     },
     {
       "slug": "bmtech",
@@ -46,7 +46,7 @@
       "slug": "stannelclub",
       "name": "Stannel Club",
       "url": "https://stannelclub.co.il/",
-      "image": "/images/portfolio/stannelclub.jpg"
+      "image": "/images/portfolio/stannelclub-logo.png"
     },
     {
       "slug": "go3d-coin",
@@ -70,19 +70,19 @@
       "slug": "skali",
       "name": "Skali",
       "url": "https://skali.co.il/",
-      "image": "/images/portfolio/skali.jpg"
+      "image": "/images/portfolio/skali-logo.png"
     },
     {
       "slug": "cardtimes",
       "name": "Card Times",
       "url": "https://cardtimes.co.il/",
-      "image": "/images/portfolio/cardtimes.png"
+      "image": "/images/portfolio/cardtimes-logo.png"
     },
     {
       "slug": "zelius",
       "name": "Zelius",
       "url": "https://zelius.co.il/",
-      "image": "/images/portfolio/zelius.jpg"
+      "image": "/images/portfolio/zelius-logo.png"
     },
     {
       "slug": "tip-finance",
@@ -100,79 +100,79 @@
       "slug": "novisisrael",
       "name": "Novis Israel",
       "url": "https://www.novisisrael.co.il/",
-      "image": "/images/portfolio/novisisrael.jpg"
+      "image": "/images/portfolio/novisisrael-logo.webp"
     },
     {
       "slug": "fiestaa",
       "name": "Fiesta",
       "url": "https://fiestaa.co.il/",
-      "image": "/images/portfolio/fiestaa.jpg"
+      "image": "/images/portfolio/fiestaa-logo.png"
     },
     {
       "slug": "sandr",
       "name": "S&R",
       "url": "https://sandr.co.il/",
-      "image": "/images/portfolio/sandr.jpg"
+      "image": "/images/portfolio/sandr-logo.png"
     },
     {
       "slug": "m-sloo",
       "name": "M-Sloo",
       "url": "https://m-sloo.co.il/",
-      "image": "/images/portfolio/m-sloo.jpg"
+      "image": "/images/portfolio/m-sloo-logo.png"
     },
     {
       "slug": "caholavan",
       "name": "כחול לבן",
       "url": "https://caholavan.co.il/",
-      "image": "/images/portfolio/caholavan.jpg"
+      "image": "/images/portfolio/caholavan-logo.png"
     },
     {
       "slug": "tom-vintage-van",
       "name": "Tom Vintage Van",
       "url": "https://tom-vintage-van.co.il/",
-      "image": "/images/portfolio/tom-vintage-van.jpg"
+      "image": "/images/portfolio/tom-vintage-van-logo.png"
     },
     {
       "slug": "maziroth",
       "name": "Maziroth",
       "url": "https://www.maziroth.com",
-      "image": "/images/portfolio/maziroth.jpg"
+      "image": "/images/portfolio/maziroth-logo.jpg"
     },
     {
       "slug": "kelimshluvim",
       "name": "Kelim Shluvim",
       "url": "https://kelimshluvim.co.il/",
-      "image": "/images/portfolio/kelimshluvim.jpg"
+      "image": "/images/portfolio/kelimshluvim-logo.png"
     },
     {
       "slug": "gochutman",
       "name": "Go Chutman",
       "url": "https://gochutman.co.il/",
-      "image": "/images/portfolio/gochutman.jpg"
+      "image": "/images/portfolio/gochutman-logo.png"
     },
     {
       "slug": "oded-strauss",
       "name": "Oded Strauss",
       "url": "https://oded-strauss.co.il/",
-      "image": "/images/portfolio/oded-strauss.jpg"
+      "image": "/images/portfolio/oded-strauss-logo.png"
     },
     {
       "slug": "reshetimes",
       "name": "Reshet Times",
       "url": "https://reshetimes.co.il/",
-      "image": "/images/portfolio/reshetimes.jpg"
+      "image": "/images/portfolio/reshetimes-logo.png"
     },
     {
       "slug": "galtalltd",
       "name": "Gal Tal",
       "url": "https://galtalltd.co.il/",
-      "image": "/images/portfolio/galtalltd.jpg"
+      "image": "/images/portfolio/galtalltd-logo.png"
     },
     {
       "slug": "go3d-contrast",
       "name": "Contrast",
       "url": "https://go3d.co.il/contrast/",
-      "image": "/images/portfolio/go3d-contrast.jpg"
+      "image": "/images/portfolio/go3d-contrast-logo.png"
     },
     {
       "slug": "go3d-js-pro",
