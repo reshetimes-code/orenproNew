@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --background: #05070d;
+  --surface: #0b0f1a;
+  --foreground: #f5f7fa;
+  --muted: #93a0b8;
+  --brand-cyan: #22d3ee;
+  --brand-blue: #2563eb;
+  --brand-orange: #f97316;
+  --border: #1c2333;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-brand-cyan: var(--brand-cyan);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-orange: var(--brand-orange);
+  --color-border: var(--border);
+  --font-sans: var(--font-heebo);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: var(--brand-cyan);
+  color: #05070d;
+}
+
+.text-gradient {
+  background-image: linear-gradient(90deg, var(--brand-cyan), var(--brand-orange));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.skip-link {
+  position: absolute;
+  right: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  background: var(--brand-cyan);
+  color: #05070d;
+  font-weight: 600;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.skip-link:focus {
+  right: 0;
+}
+
+.a11y-high-contrast {
+  --background: #000000;
+  --surface: #000000;
+  --foreground: #ffffff;
+  --muted: #ffffff;
+  --border: #ffffff;
+  filter: contrast(1.1);
+}
+
+.a11y-underline-links a {
+  text-decoration: underline !important;
+}
