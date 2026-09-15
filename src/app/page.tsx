@@ -51,7 +51,7 @@ export default function HomePage() {
               דברו איתי בוואטסאפ
             </a>
             <Link
-              href="/portfolio"
+              href="/web-development"
               className="flex items-center gap-2 rounded-full border border-border px-6 py-3 font-semibold text-foreground transition hover:border-brand-cyan hover:text-brand-cyan"
             >
               עבודות נבחרות
@@ -74,7 +74,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
             <h2 className="text-2xl font-bold sm:text-3xl">עבודות נבחרות</h2>
-            <Link href="/portfolio" className="flex items-center gap-1 text-sm font-medium text-brand-cyan">
+            <Link href="/web-development" className="flex items-center gap-1 text-sm font-medium text-brand-cyan">
               לכל הפרויקטים
               <ArrowLeft size={16} />
             </Link>
