@@ -16,7 +16,10 @@ export default function PortfolioGrid({ items }: { items: PortfolioItem[] }) {
           style={{ backgroundColor: item.bgColor || "#d4d4d4" }}
         >
           <div className="absolute inset-0 p-5 sm:p-6">
-            <div className="relative h-full w-full">
+            <div
+              className="relative h-full w-full"
+              style={item.logoScale ? { transform: `scale(${item.logoScale})` } : undefined}
+            >
               <Image
                 src={item.image}
                 alt={item.name}

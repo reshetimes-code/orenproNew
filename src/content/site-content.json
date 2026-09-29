@@ -62,14 +62,14 @@
       "name": "HCHC",
       "url": "https://hchc.co.il/",
       "image": "/images/portfolio/hchc-logo.png",
-      "bgColor": "#0b0f1a"
+      "logoScale": 0.8
     },
     {
       "slug": "carscheck",
       "name": "Car Check",
       "url": "https://carscheck-1.onrender.com/",
       "image": "/images/portfolio/carscheck-logo.png",
-      "bgColor": "#0b0f1a"
+      "logoScale": 0.8
     },
     {
       "slug": "skali",
@@ -153,7 +153,7 @@
       "slug": "reshetimes",
       "name": "Reshet Times",
       "url": "https://reshetimes.co.il/",
-      "image": "/images/portfolio/reshetimes-logo.png"
+      "image": "/images/portfolio/reshetimes-logo-v2.png"
     },
     {
       "slug": "galtalltd",
