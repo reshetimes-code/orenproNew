@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import ServiceHero from "@/components/ServiceHero";
-import { digitalCardItems } from "@/content";
+import ClientLogoGrid from "@/components/ClientLogoGrid";
+import { digitalCardItems, cardtimesClients } from "@/content";
 
 export const metadata: Metadata = {
   title: "כרטיסי ביקור דיגיטליים",
@@ -48,6 +49,14 @@ export default function DigitalBusinessCardsPage() {
               </a>
             ))}
           </div>
+        </div>
+      </div>
+
+      <div className="py-16">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <h2 className="mb-2 text-center text-2xl font-bold sm:text-3xl">עוד דוגמאות לכרטיסי ביקור דיגיטליים</h2>
+          <p className="mb-8 text-center text-muted">לקוחות נוספים שמשתמשים בכרטיס הביקור הדיגיטלי שבנינו</p>
+          <ClientLogoGrid items={cardtimesClients} />
         </div>
       </div>
     </>

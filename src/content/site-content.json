@@ -372,43 +372,212 @@
     }
   ],
   "bannerImages": [
-    { "slug": "sela-systems", "name": "Sela Mechanical Systems", "image": "/images/banners/sela-systems.gif" },
-    { "slug": "hashkaot-baam", "name": "G7 נדל\"ן והשקעות", "image": "/images/banners/hashkaot-baam.gif" },
-    { "slug": "modello", "name": "Modello - Workspace & Office Design", "image": "/images/banners/modello.gif" },
-    { "slug": "intersky", "name": "Intersky", "image": "/images/banners/intersky.gif" },
-    { "slug": "ied", "name": "IED", "image": "/images/banners/ied.gif" },
-    { "slug": "nettobit", "name": "נטו-ביט", "image": "/images/banners/nettobit.gif" },
-    { "slug": "gahat", "name": "Gahat Fire Solutions", "image": "/images/banners/gahat.gif" },
-    { "slug": "webs-promo", "name": "WEBS - בניית אתרים ופרסום בגוגל", "image": "/images/banners/webs-promo.gif" },
-    { "slug": "brz", "name": "BRZ", "image": "/images/banners/brz.gif" },
-    { "slug": "avrahamson", "name": "אברהמסון - גמ\"ח", "image": "/images/banners/avrahamson.gif" },
-    { "slug": "d-shagia", "name": "ג.ד. שגיא בע\"מ", "image": "/images/banners/d-shagia.gif" }
+    {
+      "slug": "sela-systems",
+      "name": "Sela Mechanical Systems",
+      "image": "/images/banners/sela-systems.gif"
+    },
+    {
+      "slug": "hashkaot-baam",
+      "name": "G7 נדל\"ן והשקעות",
+      "image": "/images/banners/hashkaot-baam.gif"
+    },
+    {
+      "slug": "modello",
+      "name": "Modello - Workspace & Office Design",
+      "image": "/images/banners/modello.gif"
+    },
+    {
+      "slug": "intersky",
+      "name": "Intersky",
+      "image": "/images/banners/intersky.gif"
+    },
+    {
+      "slug": "ied",
+      "name": "IED",
+      "image": "/images/banners/ied.gif"
+    },
+    {
+      "slug": "nettobit",
+      "name": "נטו-ביט",
+      "image": "/images/banners/nettobit.gif"
+    },
+    {
+      "slug": "gahat",
+      "name": "Gahat Fire Solutions",
+      "image": "/images/banners/gahat.gif"
+    },
+    {
+      "slug": "webs-promo",
+      "name": "WEBS - בניית אתרים ופרסום בגוגל",
+      "image": "/images/banners/webs-promo.gif"
+    },
+    {
+      "slug": "brz",
+      "name": "BRZ",
+      "image": "/images/banners/brz.gif"
+    },
+    {
+      "slug": "avrahamson",
+      "name": "אברהמסון - גמ\"ח",
+      "image": "/images/banners/avrahamson.gif"
+    },
+    {
+      "slug": "d-shagia",
+      "name": "ג.ד. שגיא בע\"מ",
+      "image": "/images/banners/d-shagia.gif"
+    }
   ],
   "cardtimesClients": [
-    { "slug": "sela-binuy", "name": "סלע בינוי", "image": "/images/cardtimes-clients/סלע-בינוי.png" },
-    { "slug": "keystone-bsd", "name": "Keystone BSD", "image": "/images/cardtimes-clients/keystone-bsd.png" },
-    { "slug": "lev-koren", "name": "לב-קורן משרד עורכי דין", "image": "/images/cardtimes-clients/לב-קורן-משרד-עורכי-דין.png" },
-    { "slug": "dor-mashkantaot", "name": "דור משכנתאות", "image": "/images/cardtimes-clients/דור-משכנתאות.png" },
-    { "slug": "plus-mishlohim", "name": "פלוס משלוחים", "image": "/images/cardtimes-clients/פלוס-משלוחים.png" },
-    { "slug": "sheal-hadpasot", "name": "שעל הדפסות", "image": "/images/cardtimes-clients/שעל-הדפסות.png" },
-    { "slug": "ron-kolenberg", "name": "רון קולנברג ושות'", "image": "/images/cardtimes-clients/רון-קולנברג-ושות.png" },
-    { "slug": "sky-pizza", "name": "סקאי פיצה", "image": "/images/cardtimes-clients/סקאי-פיצה.png" },
-    { "slug": "sent-moritz", "name": "סנט מוריץ - מוצרי ניקיון", "image": "/images/cardtimes-clients/סנט-מוריץ-מוצרי-ניקיון.png" },
-    { "slug": "sfp-finance", "name": "SFP - סוכנות פיננסים", "image": "/images/cardtimes-clients/sfp-סוכנות-פיננסים.png" },
-    { "slug": "dr-nir-hos", "name": "ד\"ר ניר הוס", "image": "/images/cardtimes-clients/ד-ר-ניר-הוס.png" },
-    { "slug": "ay-polisa", "name": "איי פוליסה", "image": "/images/cardtimes-clients/איי-פוליסה.png" },
-    { "slug": "dor-system", "name": "דור סיסטם", "image": "/images/cardtimes-clients/דור-סיסטם.png" },
-    { "slug": "marathon-service", "name": "מרכז שירות מרתון", "image": "/images/cardtimes-clients/מרכז-שירות-מרתון.png" },
-    { "slug": "oded-strauss-ct", "name": "עודד שטראוס", "image": "/images/cardtimes-clients/עודד-שטראוס.png" },
-    { "slug": "ncy-media", "name": "NCY Media - תאיה ישר", "image": "/images/cardtimes-clients/ncy-media-תאיה-ישר.png" },
-    { "slug": "tzur-israel", "name": "צור ישראל", "image": "/images/cardtimes-clients/צור-ישראל.png" },
-    { "slug": "astain", "name": "אסטאין - קוסמטיקה טבעית", "image": "/images/cardtimes-clients/אסטאין-קוסמטיקה-טבעית.png" },
-    { "slug": "kelim-shluvim-ct", "name": "כלים שלובים", "image": "/images/cardtimes-clients/כלים-שלובים.png" },
-    { "slug": "danan-fire", "name": "א. דנן מערכות כיבוי אש", "image": "/images/cardtimes-clients/א-דנן-מערכות-כיבוי-אש.png" },
-    { "slug": "eran-izik", "name": "ערן איזיק, משרד עורכי דין", "image": "/images/cardtimes-clients/ערן-איזיק-משרד-עורכי-דין.png" },
-    { "slug": "digitali", "name": "DIGITALI", "image": "/images/cardtimes-clients/digitali.png" },
-    { "slug": "avi-sayak", "name": "אבי סייק - שיפוצים", "image": "/images/cardtimes-clients/אבי-סייק-שיפוצים.png" },
-    { "slug": "shai-namal", "name": "שי שירותי נמל", "image": "/images/cardtimes-clients/שי-שירותי-נמל.png" },
-    { "slug": "peled-avir", "name": "פלד אבירון", "image": "/images/cardtimes-clients/פלד-אבירון.png" }
+    {
+      "slug": "sela-binuy",
+      "name": "סלע בינוי",
+      "image": "/images/cardtimes-clients/סלע-בינוי.png",
+      "url": "https://cardtimes.co.il/%d7%a1%d7%9c%d7%a2-%d7%91%d7%99%d7%a0%d7%95%d7%99-%d7%a9%d7%99-%d7%90%d7%91%d7%95%d7%97%d7%a6%d7%99%d7%a8%d7%94/"
+    },
+    {
+      "slug": "keystone-bsd",
+      "name": "Keystone BSD",
+      "image": "/images/cardtimes-clients/keystone-bsd.png",
+      "url": "https://cardtimes.co.il/keystone-bsd-%d7%90%d7%91%d7%a8%d7%92%d7%99%d7%9c-9"
+    },
+    {
+      "slug": "lev-koren",
+      "name": "לב-קורן משרד עורכי דין",
+      "image": "/images/cardtimes-clients/לב-קורן-משרד-עורכי-דין.png",
+      "url": "https://cardtimes.co.il/list-card/lev-coren/"
+    },
+    {
+      "slug": "dor-mashkantaot",
+      "name": "דור משכנתאות",
+      "image": "/images/cardtimes-clients/דור-משכנתאות.png",
+      "url": "https://cardtimes.co.il/%d7%93%d7%95%d7%a8-%d7%9e%d7%a9%d7%9b%d7%a0%d7%aa%d7%90%d7%95%d7%aa/"
+    },
+    {
+      "slug": "plus-mishlohim",
+      "name": "פלוס משלוחים",
+      "image": "/images/cardtimes-clients/פלוס-משלוחים.png",
+      "url": "https://cardtimes.co.il/%d7%a4%d7%9c%d7%95%d7%a1-%d7%94%d7%95%d7%91%d7%9c%d7%94-%d7%91%d7%a7%d7%99%d7%a8%d7%95%d7%a8-%d7%95%d7%a9%d7%99%d7%95%d7%95%d7%a7/"
+    },
+    {
+      "slug": "sheal-hadpasot",
+      "name": "שעל הדפסות",
+      "image": "/images/cardtimes-clients/שעל-הדפסות.png",
+      "url": "https://cardtimes.co.il/%d7%a9%d7%a2%d7%9c-%d7%94%d7%93%d7%a4%d7%a1%d7%95%d7%aa/"
+    },
+    {
+      "slug": "ron-kolenberg",
+      "name": "רון קולנברג ושות'",
+      "image": "/images/cardtimes-clients/רון-קולנברג-ושות.png",
+      "url": "https://cardtimes.co.il/%d7%a8%d7%95%d7%9f-%d7%a7%d7%95%d7%9c%d7%a0%d7%91%d7%a8%d7%92-%d7%95%d7%a9%d7%95%d7%aa-%d7%9e%d7%a9%d7%a8%d7%93-%d7%a2%d7%95%d7%a8%d7%9b%d7%99-%d7%93%d7%99%d7%9f-%d7%95%d7%a0%d7%95%d7%98/"
+    },
+    {
+      "slug": "sky-pizza",
+      "name": "סקאי פיצה",
+      "image": "/images/cardtimes-clients/סקאי-פיצה.png",
+      "url": "https://cardtimes.co.il/%d7%a1%d7%a7%d7%90%d7%99-%d7%a4%d7%99%d7%a6%d7%94/"
+    },
+    {
+      "slug": "sent-moritz",
+      "name": "סנט מוריץ - מוצרי ניקיון",
+      "image": "/images/cardtimes-clients/סנט-מוריץ-מוצרי-ניקיון.png",
+      "url": "https://cardtimes.co.il/%D7%A1%D7%A0%D7%98-%D7%9E%D7%95%D7%A8%D7%99%D7%A5-%D7%9E%D7%95%D7%A6%D7%A8%D7%99-%D7%A0%D7%A7%D7%99%D7%95%D7%9F/"
+    },
+    {
+      "slug": "sfp-finance",
+      "name": "SFP - סוכנות פיננסים",
+      "image": "/images/cardtimes-clients/sfp-סוכנות-פיננסים.png",
+      "url": "https://cardtimes.co.il/%d7%95%d7%99%d7%98%d7%9c%d7%99-%d7%a4%d7%9c%d7%95%d7%98%d7%99%d7%a0%d7%a1%d7%a7%d7%99-%d7%a1%d7%95%d7%9b%d7%a0%d7%95%d7%aa-%d7%9c%d7%91%d7%99%d7%98%d7%95%d7%97-%d7%a4%d7%a0%d7%a1%d7%99%d7%95%d7%9f/"
+    },
+    {
+      "slug": "dr-nir-hos",
+      "name": "ד\"ר ניר הוס",
+      "image": "/images/cardtimes-clients/ד-ר-ניר-הוס.png",
+      "url": "https://cardtimes.co.il/%d7%93%d7%b4%d7%a8-%d7%a0%d7%99%d7%a8-%d7%94%d7%95%d7%a1/"
+    },
+    {
+      "slug": "ay-polisa",
+      "name": "איי פוליסה",
+      "image": "/images/cardtimes-clients/איי-פוליסה.png",
+      "url": "https://cardtimes.co.il/%d7%90%d7%99%d7%99-%d7%a4%d7%95%d7%9c%d7%99%d7%a1%d7%94-%d7%9e%d7%a9%d7%94-%d7%97%d7%9c%d7%95%d7%90%d7%a0%d7%99/"
+    },
+    {
+      "slug": "dor-system",
+      "name": "דור סיסטם",
+      "image": "/images/cardtimes-clients/דור-סיסטם.png",
+      "url": "https://cardtimes.co.il/%d7%93%d7%95%d7%a8-%d7%a1%d7%99%d7%a1%d7%98%d7%9d/"
+    },
+    {
+      "slug": "marathon-service",
+      "name": "מרכז שירות מרתון",
+      "image": "/images/cardtimes-clients/מרכז-שירות-מרתון.png",
+      "url": "https://cardtimes.co.il/%d7%9e%d7%95%d7%a1%d7%9a-%d7%9e%d7%a8%d7%aa%d7%95%d7%9f/"
+    },
+    {
+      "slug": "oded-strauss-ct",
+      "name": "עודד שטראוס",
+      "image": "/images/cardtimes-clients/עודד-שטראוס.png",
+      "url": "https://cardtimes.co.il/%d7%a2%d7%95%d7%93%d7%93-%d7%a9%d7%98%d7%a8%d7%90%d7%95%d7%a1/"
+    },
+    {
+      "slug": "ncy-media",
+      "name": "NCY Media - תאיה ישר",
+      "image": "/images/cardtimes-clients/ncy-media-תאיה-ישר.png",
+      "url": "https://cardtimes.co.il/%d7%99%d7%a9%d7%a8-%d7%a0%d7%99%d7%a8-%d7%a9%d7%95%d7%95%d7%a7-%d7%95%d7%9e%d7%9b%d7%99%d7%a8%d7%95%d7%aa-%d7%91%d7%a2%d7%b4%d7%9e-%d7%aa%d7%90%d7%99%d7%94-%d7%99%d7%a9%d7%a8-%d7%91%d7%a2%d7%9e/"
+    },
+    {
+      "slug": "tzur-israel",
+      "name": "צור ישראל",
+      "image": "/images/cardtimes-clients/צור-ישראל.png",
+      "url": "https://cardtimes.co.il/%d7%a6%d7%95%d7%a8-%d7%99%d7%a9%d7%a8%d7%90%d7%9c/"
+    },
+    {
+      "slug": "astain",
+      "name": "אסטאין - קוסמטיקה טבעית",
+      "image": "/images/cardtimes-clients/אסטאין-קוסמטיקה-טבעית.png",
+      "url": "https://cardtimes.co.il/%d7%90%d7%a1%d7%98%d7%90%d7%99%d7%9f-%d7%9b%d7%95%d7%97%d7%95-%d7%a9%d7%9c-%d7%94%d7%98%d7%91%d7%a2-%d7%91%d7%a7%d7%95%d7%a1%d7%9e%d7%98%d7%99%d7%a7%d7%94-%d7%99%d7%a9%d7%a8%d7%90%d7%9c%d7%99%d7%aa/"
+    },
+    {
+      "slug": "kelim-shluvim-ct",
+      "name": "כלים שלובים",
+      "image": "/images/cardtimes-clients/כלים-שלובים.png",
+      "url": "https://cardtimes.co.il/%d7%9b%d7%9c%d7%99%d7%9d-%d7%a9%d7%9c%d7%95%d7%91%d7%99%d7%9d/"
+    },
+    {
+      "slug": "danan-fire",
+      "name": "א. דנן מערכות כיבוי אש",
+      "image": "/images/cardtimes-clients/א-דנן-מערכות-כיבוי-אש.png",
+      "url": "https://cardtimes.co.il/%d7%90-%d7%93%d7%a0%d7%9f/"
+    },
+    {
+      "slug": "eran-izik",
+      "name": "ערן איזיק, משרד עורכי דין",
+      "image": "/images/cardtimes-clients/ערן-איזיק-משרד-עורכי-דין.png",
+      "url": "https://cardtimes.co.il/%d7%a2%d7%a8%d7%9f-%d7%90%d7%99%d7%96%d7%99%d7%a7-%d7%9e%d7%a9%d7%a8%d7%93-%d7%a2%d7%95%d7%a8%d7%9b%d7%99-%d7%93%d7%99%d7%9f/"
+    },
+    {
+      "slug": "digitali",
+      "name": "DIGITALI",
+      "image": "/images/cardtimes-clients/digitali.png",
+      "url": "https://cardtimes.co.il/%d7%90%d7%9c%d7%99%d7%a2%d7%96%d7%a8-%d7%a4%d7%97%d7%99%d7%9e%d7%94-%d7%97%d7%91%d7%a8%d7%aa-%d7%93%d7%99%d7%92%d7%99%d7%98%d7%9c%d7%99/"
+    },
+    {
+      "slug": "avi-sayak",
+      "name": "אבי סייק - שיפוצים",
+      "image": "/images/cardtimes-clients/אבי-סייק-שיפוצים.png",
+      "url": "https://cardtimes.co.il/%d7%90%d7%91%d7%99-%d7%a1%d7%99%d7%99%d7%a7-%d7%9b%d7%a9%d7%a9%d7%99%d7%a4%d7%95%d7%a5-%d7%94%d7%95%d7%a4%d7%9a-%d7%9c%d7%99%d7%a6%d7%99%d7%a8%d7%94/"
+    },
+    {
+      "slug": "shai-namal",
+      "name": "שי שירותי נמל",
+      "image": "/images/cardtimes-clients/שי-שירותי-נמל.png",
+      "url": "https://cardtimes.co.il/%d7%a9%d7%99-%d7%a9%d7%99%d7%a8%d7%95%d7%aa%d7%99-%d7%a0%d7%9e%d7%9c/"
+    },
+    {
+      "slug": "peled-avir",
+      "name": "פלד אבירון",
+      "image": "/images/cardtimes-clients/פלד-אבירון.png",
+      "url": "https://cardtimes.co.il/%d7%a4%d7%9c%d7%93-%d7%90%d7%91%d7%99%d7%a8%d7%95%d7%9f/"
+    }
   ]
 }

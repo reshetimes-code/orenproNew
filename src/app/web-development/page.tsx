@@ -3,8 +3,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import ServiceHero from "@/components/ServiceHero";
 import PortfolioGrid from "@/components/PortfolioGrid";
-import ClientLogoGrid from "@/components/ClientLogoGrid";
-import { portfolioItems, cardtimesClients } from "@/content";
+import { portfolioItems } from "@/content";
 
 export const metadata: Metadata = {
   title: "בניית אתרים ומערכות",
@@ -37,14 +36,6 @@ export default function WebDevelopmentPage() {
           <h2 className="mb-2 text-center text-2xl font-bold sm:text-3xl">מוזמנים להתרשם ממספר דוגמאות</h2>
           <p className="mb-8 text-center text-muted">30 פרויקטים חיים שבניתי ללקוחות מגוונים</p>
           <PortfolioGrid items={portfolioItems} />
-        </div>
-      </div>
-
-      <div className="py-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="mb-2 text-center text-2xl font-bold sm:text-3xl">עוד דוגמאות לכרטיסי ביקור דיגיטליים</h2>
-          <p className="mb-8 text-center text-muted">לקוחות נוספים שמשתמשים בכרטיס הביקור הדיגיטלי שבנינו</p>
-          <ClientLogoGrid items={cardtimesClients} />
         </div>
       </div>
 

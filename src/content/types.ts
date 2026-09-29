@@ -38,6 +38,7 @@ export type ClientLogo = {
   slug: string;
   name: string;
   image: string;
+  url: string;
 };
 
 export type SiteContent = {
