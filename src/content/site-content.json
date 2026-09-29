@@ -4,13 +4,15 @@
       "slug": "qrselfie",
       "name": "Photo Booth",
       "url": "https://qrselfie.com/",
-      "image": "/images/portfolio/qrselfie-logo.png"
+      "image": "/images/portfolio/qrselfie-logo.png",
+      "emphasize": true
     },
     {
       "slug": "be-orot",
       "name": "באורות",
       "url": "https://be-orot.co.il/",
-      "image": "/images/portfolio/be-orot-logo-v2.png"
+      "image": "/images/portfolio/be-orot-logo-v2.png",
+      "emphasize": true
     },
     {
       "slug": "songo",

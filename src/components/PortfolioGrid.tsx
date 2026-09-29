@@ -15,6 +15,12 @@ export default function PortfolioGrid({ items }: { items: PortfolioItem[] }) {
           className="group relative aspect-video overflow-hidden rounded-lg border border-border"
           style={{ backgroundColor: item.bgColor || "#d4d4d4" }}
         >
+          {item.emphasize ? (
+            <div
+              className="absolute inset-0"
+              style={{ background: "radial-gradient(circle, rgba(0,0,0,0.35), transparent 65%)" }}
+            />
+          ) : null}
           <div className="absolute inset-0 p-5 sm:p-6">
             <div
               className="relative h-full w-full"
@@ -25,6 +31,7 @@ export default function PortfolioGrid({ items }: { items: PortfolioItem[] }) {
                 alt={item.name}
                 fill
                 className="object-contain transition duration-500 group-hover:scale-105"
+                style={item.emphasize ? { filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.7))" } : undefined}
                 sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
               />
             </div>

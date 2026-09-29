@@ -7,6 +7,7 @@ export type PortfolioItem = {
   tagColor?: string;
   bgColor?: string;
   logoScale?: number;
+  emphasize?: boolean;
 };
 
 export type VideoItem = {
