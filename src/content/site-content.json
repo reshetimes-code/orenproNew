@@ -1,6 +1,12 @@
 {
   "portfolio": [
     {
+      "slug": "qrselfie",
+      "name": "Photo Booth",
+      "url": "https://qrselfie.com/",
+      "image": "/images/portfolio/qrselfie-logo.png"
+    },
+    {
       "slug": "be-orot",
       "name": "באורות",
       "url": "https://be-orot.co.il/",
