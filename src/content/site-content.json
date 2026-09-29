@@ -74,6 +74,12 @@
       "bgColor": "#ffffff"
     },
     {
+      "slug": "appelectric",
+      "name": "App Electric",
+      "url": "https://appelectric.co.il/",
+      "image": "/images/portfolio/appelectric-logo.png"
+    },
+    {
       "slug": "zarkor",
       "name": "Zarkor Catalog",
       "url": "https://zarkor-catalog.onrender.com/",
