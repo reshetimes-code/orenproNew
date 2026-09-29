@@ -18,7 +18,7 @@ export default function PortfolioGrid({ items }: { items: PortfolioItem[] }) {
           {item.emphasize ? (
             <div
               className="absolute inset-0"
-              style={{ background: "radial-gradient(circle, rgba(0,0,0,0.35), transparent 65%)" }}
+              style={{ background: "radial-gradient(circle, rgba(0,0,0,0.6), rgba(0,0,0,0.25) 45%, transparent 75%)" }}
             />
           ) : null}
           <div className="absolute inset-0 p-5 sm:p-6">
@@ -31,7 +31,14 @@ export default function PortfolioGrid({ items }: { items: PortfolioItem[] }) {
                 alt={item.name}
                 fill
                 className="object-contain transition duration-500 group-hover:scale-105"
-                style={item.emphasize ? { filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.7))" } : undefined}
+                style={
+                  item.emphasize
+                    ? {
+                        filter:
+                          "saturate(1.4) contrast(1.2) drop-shadow(1px 0 0 #3a2a00) drop-shadow(-1px 0 0 #3a2a00) drop-shadow(0 1px 0 #3a2a00) drop-shadow(0 -1px 0 #3a2a00) drop-shadow(0 2px 4px rgba(0,0,0,0.8))",
+                      }
+                    : undefined
+                }
                 sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
               />
             </div>

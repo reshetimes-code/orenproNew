@@ -12,6 +12,7 @@
       "name": "באורות",
       "url": "https://be-orot.co.il/",
       "image": "/images/portfolio/be-orot-logo-v2.png",
+      "logoScale": 1.2,
       "emphasize": true
     },
     {
@@ -382,5 +383,32 @@
     { "slug": "brz", "name": "BRZ", "image": "/images/banners/brz.gif" },
     { "slug": "avrahamson", "name": "אברהמסון - גמ\"ח", "image": "/images/banners/avrahamson.gif" },
     { "slug": "d-shagia", "name": "ג.ד. שגיא בע\"מ", "image": "/images/banners/d-shagia.gif" }
+  ],
+  "cardtimesClients": [
+    { "slug": "sela-binuy", "name": "סלע בינוי", "image": "/images/cardtimes-clients/סלע-בינוי.png" },
+    { "slug": "keystone-bsd", "name": "Keystone BSD", "image": "/images/cardtimes-clients/keystone-bsd.png" },
+    { "slug": "lev-koren", "name": "לב-קורן משרד עורכי דין", "image": "/images/cardtimes-clients/לב-קורן-משרד-עורכי-דין.png" },
+    { "slug": "dor-mashkantaot", "name": "דור משכנתאות", "image": "/images/cardtimes-clients/דור-משכנתאות.png" },
+    { "slug": "plus-mishlohim", "name": "פלוס משלוחים", "image": "/images/cardtimes-clients/פלוס-משלוחים.png" },
+    { "slug": "sheal-hadpasot", "name": "שעל הדפסות", "image": "/images/cardtimes-clients/שעל-הדפסות.png" },
+    { "slug": "ron-kolenberg", "name": "רון קולנברג ושות'", "image": "/images/cardtimes-clients/רון-קולנברג-ושות.png" },
+    { "slug": "sky-pizza", "name": "סקאי פיצה", "image": "/images/cardtimes-clients/סקאי-פיצה.png" },
+    { "slug": "sent-moritz", "name": "סנט מוריץ - מוצרי ניקיון", "image": "/images/cardtimes-clients/סנט-מוריץ-מוצרי-ניקיון.png" },
+    { "slug": "sfp-finance", "name": "SFP - סוכנות פיננסים", "image": "/images/cardtimes-clients/sfp-סוכנות-פיננסים.png" },
+    { "slug": "dr-nir-hos", "name": "ד\"ר ניר הוס", "image": "/images/cardtimes-clients/ד-ר-ניר-הוס.png" },
+    { "slug": "ay-polisa", "name": "איי פוליסה", "image": "/images/cardtimes-clients/איי-פוליסה.png" },
+    { "slug": "dor-system", "name": "דור סיסטם", "image": "/images/cardtimes-clients/דור-סיסטם.png" },
+    { "slug": "marathon-service", "name": "מרכז שירות מרתון", "image": "/images/cardtimes-clients/מרכז-שירות-מרתון.png" },
+    { "slug": "oded-strauss-ct", "name": "עודד שטראוס", "image": "/images/cardtimes-clients/עודד-שטראוס.png" },
+    { "slug": "ncy-media", "name": "NCY Media - תאיה ישר", "image": "/images/cardtimes-clients/ncy-media-תאיה-ישר.png" },
+    { "slug": "tzur-israel", "name": "צור ישראל", "image": "/images/cardtimes-clients/צור-ישראל.png" },
+    { "slug": "astain", "name": "אסטאין - קוסמטיקה טבעית", "image": "/images/cardtimes-clients/אסטאין-קוסמטיקה-טבעית.png" },
+    { "slug": "kelim-shluvim-ct", "name": "כלים שלובים", "image": "/images/cardtimes-clients/כלים-שלובים.png" },
+    { "slug": "danan-fire", "name": "א. דנן מערכות כיבוי אש", "image": "/images/cardtimes-clients/א-דנן-מערכות-כיבוי-אש.png" },
+    { "slug": "eran-izik", "name": "ערן איזיק, משרד עורכי דין", "image": "/images/cardtimes-clients/ערן-איזיק-משרד-עורכי-דין.png" },
+    { "slug": "digitali", "name": "DIGITALI", "image": "/images/cardtimes-clients/digitali.png" },
+    { "slug": "avi-sayak", "name": "אבי סייק - שיפוצים", "image": "/images/cardtimes-clients/אבי-סייק-שיפוצים.png" },
+    { "slug": "shai-namal", "name": "שי שירותי נמל", "image": "/images/cardtimes-clients/שי-שירותי-נמל.png" },
+    { "slug": "peled-avir", "name": "פלד אבירון", "image": "/images/cardtimes-clients/פלד-אבירון.png" }
   ]
 }

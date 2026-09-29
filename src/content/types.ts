@@ -34,6 +34,12 @@ export type BannerImage = {
   image: string;
 };
 
+export type ClientLogo = {
+  slug: string;
+  name: string;
+  image: string;
+};
+
 export type SiteContent = {
   portfolio: PortfolioItem[];
   bannerVideos: VideoItem[];
@@ -42,4 +48,5 @@ export type SiteContent = {
   digitalCards: DigitalCardItem[];
   tours: TourItem[];
   bannerImages: BannerImage[];
+  cardtimesClients: ClientLogo[];
 };
