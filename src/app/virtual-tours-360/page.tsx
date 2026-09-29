@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ExternalLink, View } from "lucide-react";
 import ServiceHero from "@/components/ServiceHero";
 import { tourItems } from "@/content";
@@ -38,13 +39,23 @@ export default function VirtualTours360Page() {
                 href={tour.embedUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center justify-between rounded-xl border border-border bg-surface p-5 transition hover:border-brand-cyan"
+                className="group relative flex aspect-video items-end overflow-hidden rounded-xl border border-border bg-surface transition hover:border-brand-cyan"
               >
-                <span className="flex items-center gap-3 font-semibold">
-                  <View size={20} className="text-brand-cyan" />
-                  {tour.name}
-                </span>
-                <ExternalLink size={16} className="text-muted transition group-hover:text-brand-cyan" />
+                <Image
+                  src={`/images/tours/${tour.slug}.jpg`}
+                  alt={tour.name}
+                  fill
+                  className="object-cover transition duration-500 group-hover:scale-105"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
+                <div className="relative z-10 flex w-full items-center justify-between p-4">
+                  <span className="flex items-center gap-2 font-semibold text-white">
+                    <View size={18} className="text-brand-cyan" />
+                    {tour.name}
+                  </span>
+                  <ExternalLink size={16} className="text-white/80 transition group-hover:text-brand-cyan" />
+                </div>
               </a>
             ))}
           </div>
