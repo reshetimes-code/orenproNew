@@ -67,6 +67,13 @@
       "bgColor": "#ffffff"
     },
     {
+      "slug": "bmtech-media",
+      "name": "BM Tech Media",
+      "url": "https://bmtech.co.il/",
+      "image": "/images/portfolio/bmtech-web-logo.png",
+      "bgColor": "#ffffff"
+    },
+    {
       "slug": "zarkor",
       "name": "Zarkor Catalog",
       "url": "https://zarkor-catalog.onrender.com/",
