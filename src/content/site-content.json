@@ -1,6 +1,18 @@
 {
   "portfolio": [
     {
+      "slug": "be-orot",
+      "name": "באורות",
+      "url": "https://be-orot.co.il/",
+      "image": "/images/portfolio/be-orot-logo.png"
+    },
+    {
+      "slug": "songo",
+      "name": "Songo",
+      "url": "https://www.songo.co.il",
+      "image": "/images/portfolio/songo-logo.png"
+    },
+    {
       "slug": "mishpatly",
       "name": "Mishpatly",
       "url": "https://mishpatly.co.il/",
