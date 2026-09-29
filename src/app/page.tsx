@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { MessageCircle, ArrowLeft } from "lucide-react";
 import ServiceTile from "@/components/ServiceTile";
 import PortfolioGrid from "@/components/PortfolioGrid";
@@ -25,14 +24,6 @@ export default function HomePage() {
         <HeroVideoSlider videoIds={HERO_VIDEO_IDS} />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/60" />
         <div className="relative z-10 mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
-          <Image
-            src="/images/logo.png"
-            alt={siteConfig.name}
-            width={280}
-            height={92}
-            className="mx-auto mb-8 h-16 w-auto sm:h-20"
-            priority
-          />
           <h1 className="text-4xl font-extrabold leading-tight sm:text-6xl">
             בניית אתרים <span className="text-gradient">ומערכות</span> לעסק שלך
           </h1>
