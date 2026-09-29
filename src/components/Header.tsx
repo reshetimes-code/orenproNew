@@ -12,14 +12,14 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/80 bg-background/85 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2 shrink-0" onClick={() => setOpen(false)}>
           <Image
             src="/images/logo.png"
             alt={siteConfig.name}
-            width={140}
-            height={46}
-            className="h-10 w-auto"
+            width={185}
+            height={61}
+            className="h-14 w-auto"
             priority
           />
         </Link>
@@ -29,11 +29,11 @@ export default function Header() {
             <div key={item.href} className="group relative shrink-0">
               <Link
                 href={item.href}
-                className="flex items-center gap-1 whitespace-nowrap rounded-md px-2.5 py-2 text-[13px] font-medium text-foreground/85 transition-colors hover:bg-white/5 hover:text-brand-cyan"
+                className="flex items-center gap-1 whitespace-nowrap rounded-md px-2.5 py-2.5 text-[16px] font-semibold text-foreground/85 transition-colors hover:bg-white/5 hover:text-brand-cyan"
               >
                 {item.label}
                 {"children" in item && item.children ? (
-                  <ChevronDown size={14} className="opacity-60" />
+                  <ChevronDown size={16} className="opacity-60" />
                 ) : null}
               </Link>
               {"children" in item && item.children ? (
@@ -42,7 +42,7 @@ export default function Header() {
                     <Link
                       key={child.href}
                       href={child.href}
-                      className="block rounded-md px-3 py-2 text-sm text-foreground/85 hover:bg-white/5 hover:text-brand-cyan"
+                      className="block rounded-md px-3 py-2.5 text-base text-foreground/85 hover:bg-white/5 hover:text-brand-cyan"
                     >
                       {child.label}
                     </Link>
@@ -57,7 +57,7 @@ export default function Header() {
           href={siteConfig.whatsappHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden shrink-0 items-center gap-2 rounded-full bg-green-500/90 px-4 py-2 text-sm font-semibold text-white transition hover:bg-green-500 xl:inline-flex"
+          className="hidden shrink-0 items-center gap-2 rounded-full bg-green-500/90 px-5 py-2.5 text-base font-semibold text-white transition hover:bg-green-500 xl:inline-flex"
         >
           <MessageCircle size={16} />
           וואטסאפ
@@ -80,7 +80,7 @@ export default function Header() {
               <div className="flex items-center justify-between">
                 <Link
                   href={item.href}
-                  className="block flex-1 py-3 text-sm font-medium text-foreground/90"
+                  className="block flex-1 py-3 text-base font-medium text-foreground/90"
                   onClick={() => setOpen(false)}
                 >
                   {item.label}
@@ -102,7 +102,7 @@ export default function Header() {
                     <Link
                       key={child.href}
                       href={child.href}
-                      className="block py-2 text-sm text-foreground/70"
+                      className="block py-2 text-base text-foreground/70"
                       onClick={() => setOpen(false)}
                     >
                       {child.label}
