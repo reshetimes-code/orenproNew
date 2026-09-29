@@ -9,5 +9,6 @@ export const videoEditingVideos = content.videoEditingVideos;
 export const aerialVideos = content.aerialVideos;
 export const digitalCardItems = content.digitalCards;
 export const tourItems = content.tours;
+export const bannerImages = content.bannerImages;
 
 export * from "./types";

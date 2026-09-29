@@ -34,13 +34,15 @@
       "slug": "bmtech",
       "name": "BM Tech",
       "url": "https://www.bmtech-ag.co.il/",
-      "image": "/images/portfolio/bmtech-logo.svg"
+      "image": "/images/portfolio/bmtech-logo.png",
+      "bgColor": "#ffffff"
     },
     {
       "slug": "zarkor",
       "name": "Zarkor Catalog",
       "url": "https://zarkor-catalog.onrender.com/",
-      "image": "/images/portfolio/zarkor-logo.svg"
+      "image": "/images/portfolio/zarkor-logo.png",
+      "bgColor": "#ffffff"
     },
     {
       "slug": "stannelclub",
@@ -52,19 +54,22 @@
       "slug": "go3d-coin",
       "name": "Coin",
       "url": "https://go3d.co.il/coin/",
-      "image": "/images/portfolio/go3d-coin-logo.svg"
+      "image": "/images/portfolio/go3d-coin-logo.png",
+      "bgColor": "#ffffff"
     },
     {
       "slug": "hchc",
       "name": "HCHC",
       "url": "https://hchc.co.il/",
-      "image": "/images/portfolio/hchc-logo.svg"
+      "image": "/images/portfolio/hchc-logo.png",
+      "bgColor": "#0b0f1a"
     },
     {
       "slug": "carscheck",
       "name": "Car Check",
       "url": "https://carscheck-1.onrender.com/",
-      "image": "/images/portfolio/carscheck-logo.svg"
+      "image": "/images/portfolio/carscheck-logo.png",
+      "bgColor": "#0b0f1a"
     },
     {
       "slug": "skali",
@@ -356,5 +361,18 @@
       "name": "Bride Room",
       "embedUrl": "https://go3d.co.il/360/bride-room/bride.html"
     }
+  ],
+  "bannerImages": [
+    { "slug": "sela-systems", "name": "Sela Mechanical Systems", "image": "/images/banners/sela-systems.gif" },
+    { "slug": "hashkaot-baam", "name": "G7 נדל\"ן והשקעות", "image": "/images/banners/hashkaot-baam.gif" },
+    { "slug": "modello", "name": "Modello - Workspace & Office Design", "image": "/images/banners/modello.gif" },
+    { "slug": "intersky", "name": "Intersky", "image": "/images/banners/intersky.gif" },
+    { "slug": "ied", "name": "IED", "image": "/images/banners/ied.gif" },
+    { "slug": "nettobit", "name": "נטו-ביט", "image": "/images/banners/nettobit.gif" },
+    { "slug": "gahat", "name": "Gahat Fire Solutions", "image": "/images/banners/gahat.gif" },
+    { "slug": "webs-promo", "name": "WEBS - בניית אתרים ופרסום בגוגל", "image": "/images/banners/webs-promo.gif" },
+    { "slug": "brz", "name": "BRZ", "image": "/images/banners/brz.gif" },
+    { "slug": "avrahamson", "name": "אברהמסון - גמ\"ח", "image": "/images/banners/avrahamson.gif" },
+    { "slug": "d-shagia", "name": "ג.ד. שגיא בע\"מ", "image": "/images/banners/d-shagia.gif" }
   ]
 }

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import ServiceHero from "@/components/ServiceHero";
 import VideoGrid from "@/components/VideoGrid";
-import { bannerVideos } from "@/content";
+import BannerImageGrid from "@/components/BannerImageGrid";
+import { bannerVideos, bannerImages } from "@/content";
 
 export const metadata: Metadata = {
   title: "באנרים ואנימציה",
@@ -35,6 +36,13 @@ export default function BannersAnimationPage() {
             מוזמנים להתרשם ממספר באנרים, אנימציות ואינטרו לסרטונים
           </h2>
           <VideoGrid items={bannerVideos} />
+        </div>
+      </div>
+
+      <div className="py-16">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <h2 className="mb-8 text-center text-2xl font-bold sm:text-3xl">דוגמאות לבאנרים ללקוחות</h2>
+          <BannerImageGrid items={bannerImages} />
         </div>
       </div>
     </>

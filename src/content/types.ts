@@ -5,6 +5,7 @@ export type PortfolioItem = {
   image: string;
   tag?: string;
   tagColor?: string;
+  bgColor?: string;
 };
 
 export type VideoItem = {
@@ -25,6 +26,12 @@ export type TourItem = {
   embedUrl: string;
 };
 
+export type BannerImage = {
+  slug: string;
+  name: string;
+  image: string;
+};
+
 export type SiteContent = {
   portfolio: PortfolioItem[];
   bannerVideos: VideoItem[];
@@ -32,4 +39,5 @@ export type SiteContent = {
   aerialVideos: VideoItem[];
   digitalCards: DigitalCardItem[];
   tours: TourItem[];
+  bannerImages: BannerImage[];
 };

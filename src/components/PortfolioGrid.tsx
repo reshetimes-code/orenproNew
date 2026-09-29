@@ -12,7 +12,8 @@ export default function PortfolioGrid({ items }: { items: PortfolioItem[] }) {
           href={item.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative aspect-video overflow-hidden rounded-lg border border-border bg-neutral-300"
+          className="group relative aspect-video overflow-hidden rounded-lg border border-border"
+          style={{ backgroundColor: item.bgColor || "#d4d4d4" }}
         >
           <div className="absolute inset-0 p-5 sm:p-6">
             <div className="relative h-full w-full">
