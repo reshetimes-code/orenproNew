@@ -15,12 +15,6 @@ export default function PortfolioGrid({ items }: { items: PortfolioItem[] }) {
           className="group relative aspect-video overflow-hidden rounded-lg border border-border"
           style={{ backgroundColor: item.bgColor || "#d4d4d4" }}
         >
-          {item.emphasize ? (
-            <div
-              className="absolute inset-0"
-              style={{ background: "radial-gradient(circle, rgba(0,0,0,0.6), rgba(0,0,0,0.25) 45%, transparent 75%)" }}
-            />
-          ) : null}
           <div className="absolute inset-0 p-5 sm:p-6">
             <div
               className="relative h-full w-full"
@@ -37,7 +31,13 @@ export default function PortfolioGrid({ items }: { items: PortfolioItem[] }) {
                         filter:
                           "saturate(1.4) contrast(1.2) drop-shadow(1px 0 0 #3a2a00) drop-shadow(-1px 0 0 #3a2a00) drop-shadow(0 1px 0 #3a2a00) drop-shadow(0 -1px 0 #3a2a00) drop-shadow(0 2px 4px rgba(0,0,0,0.8))",
                       }
-                    : undefined
+                    : item.outline
+                      ? {
+                          filter: ["0.5px 0", "-0.5px 0", "0 0.5px", "0 -0.5px"]
+                            .map((o) => `drop-shadow(${o} 0 ${item.outline})`)
+                            .join(" "),
+                        }
+                      : undefined
                 }
                 sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
               />

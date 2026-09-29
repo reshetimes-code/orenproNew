@@ -8,11 +8,18 @@
       "emphasize": true
     },
     {
+      "slug": "qrselfie-app",
+      "name": "QR Selfie פוטובוט",
+      "url": "https://qrselfie.com/landpage",
+      "image": "/images/portfolio/qrselfie-app-logo.png",
+      "bgColor": "#0b0a16"
+    },
+    {
       "slug": "be-orot",
       "name": "באורות",
       "url": "https://be-orot.co.il/",
       "image": "/images/portfolio/be-orot-logo-v2.png",
-      "logoScale": 1.2,
+      "logoScale": 1.72,
       "emphasize": true
     },
     {
@@ -49,7 +56,8 @@
       "slug": "djorens",
       "name": "DJ Oren",
       "url": "https://djorens.co.il/",
-      "image": "/images/portfolio/djorens-logo-v2.png"
+      "image": "/images/portfolio/djorens-logo.png",
+      "outline": "rgba(26,37,64,0.3)"
     },
     {
       "slug": "bmtech",
