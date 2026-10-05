@@ -29,7 +29,8 @@ export default function Header() {
             <div key={item.href} className="group relative shrink-0">
               <Link
                 href={item.href}
-                className="flex items-center gap-1 whitespace-nowrap rounded-md px-2.5 py-2.5 text-[16px] font-semibold text-foreground/85 transition-colors hover:bg-white/5 hover:text-brand-cyan"
+                {...(item.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                className="flex items-center gap-1 whitespace-nowrap rounded-md px-2 py-2.5 text-[15px] font-semibold text-foreground/85 transition-colors hover:bg-white/5 hover:text-brand-cyan"
               >
                 {item.label}
                 {"children" in item && item.children ? (
@@ -80,6 +81,7 @@ export default function Header() {
               <div className="flex items-center justify-between">
                 <Link
                   href={item.href}
+                  {...(item.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                   className="block flex-1 py-3 text-base font-medium text-foreground/90"
                   onClick={() => setOpen(false)}
                 >
