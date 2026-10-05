@@ -5,17 +5,17 @@ import RibbonBadge from "./RibbonBadge";
 
 export default function PortfolioGrid({ items }: { items: PortfolioItem[] }) {
   return (
-    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+    <div className="grid grid-cols-2 gap-3 sm:gap-4 sm:grid-cols-3 lg:grid-cols-4">
       {items.map((item) => (
         <a
           key={item.slug}
           href={item.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative aspect-video overflow-hidden rounded-lg border border-border"
+          className="group relative aspect-[4/3] overflow-hidden sm:aspect-video rounded-lg border border-border"
           style={{ backgroundColor: item.bgColor || "#d4d4d4" }}
         >
-          <div className="absolute inset-0 p-5 sm:p-6">
+          <div className="absolute inset-0 p-1.5 sm:p-6">
             <div
               className="relative h-full w-full"
               style={item.logoScale ? { transform: `scale(${item.logoScale})` } : undefined}
