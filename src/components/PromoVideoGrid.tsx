@@ -10,7 +10,7 @@ export default function PromoVideoGrid({ items }: { items: PromoVideo[] }) {
             playsInline
             preload="none"
             poster={video.poster}
-            className="aspect-[9/16] w-full bg-black object-cover"
+            className="aspect-[9/16] w-full bg-black object-contain"
           >
             <source src={video.src} type="video/mp4" />
           </video>
