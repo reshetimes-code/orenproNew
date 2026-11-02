@@ -643,6 +643,12 @@
       "title": "סרטון פרסום",
       "src": "/images/videos/final-nowh.mp4",
       "poster": "/images/videos/final-nowh.jpg"
+    },
+    {
+      "slug": "whatsapp-promo",
+      "title": "סרטון פרסום",
+      "src": "/images/videos/whatsapp-promo.mp4",
+      "poster": "/images/videos/whatsapp-promo.jpg"
     }
   ]
 }
