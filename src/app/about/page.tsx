@@ -39,6 +39,24 @@ export default function AboutPage() {
           </div>
         ))}
       </div>
+
+      <h2 className="mt-14 text-center text-2xl font-bold sm:text-3xl">תעודות והסמכות</h2>
+      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {[
+          { n: 1, alt: "תעודת סיום קורס Python Specialization - Full Stack Web Development" },
+          { n: 2, alt: "אישור סיום לימודים וגיליון ציונים - ג'ון בריים" },
+        ].map(({ n, alt }) => (
+          <a
+            key={n}
+            href={`/images/about/cert-${n}.jpg`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative block aspect-[1000/1414] overflow-hidden rounded-xl border border-border bg-white"
+          >
+            <Image src={`/images/about/cert-${n}.jpg`} alt={alt} fill sizes="(min-width: 768px) 360px, 100vw" className="object-contain" />
+          </a>
+        ))}
+      </div>
       </div>
     </>
   );
