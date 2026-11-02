@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle, ArrowLeft } from "lucide-react";
 import ServiceTile from "@/components/ServiceTile";
@@ -59,6 +60,18 @@ export default function HomePage() {
           {services.map((s) => (
             <ServiceTile key={s.href} {...s} />
           ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
+        <div className="relative aspect-[3/1] overflow-hidden rounded-2xl border border-border">
+          <Image
+            src="/images/about/banner.jpg"
+            alt="אורן שפייזר - טכנולוגיה, פיתוח ופתרונות AI"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1152px) 1152px, 100vw"
+          />
         </div>
       </section>
 
