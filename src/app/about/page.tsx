@@ -33,12 +33,11 @@ export default function AboutPage() {
       </div>
 
       <div className="mt-10 grid grid-cols-2 gap-4">
-        <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-border">
-          <Image src="/images/about/1.jpg" alt="אורן שפייזר בעבודה" fill className="object-cover" />
-        </div>
-        <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-border">
-          <Image src="/images/about/2.jpg" alt="ציוד צילום מקצועי" fill className="object-cover" />
-        </div>
+        {[1, 2, 3, 4].map((n) => (
+          <div key={n} className="relative aspect-square overflow-hidden rounded-xl border border-border">
+            <Image src={`/images/about/new-${n}.jpg`} alt="אורן שפייזר" fill sizes="(min-width: 768px) 360px, 50vw" className="object-cover" />
+          </div>
+        ))}
       </div>
       </div>
     </>
