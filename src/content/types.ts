@@ -16,6 +16,13 @@ export type VideoItem = {
   title?: string;
 };
 
+export type PromoVideo = {
+  slug: string;
+  title: string;
+  src: string;
+  poster: string;
+};
+
 export type DigitalCardItem = {
   slug: string;
   name: string;
@@ -47,6 +54,7 @@ export type SiteContent = {
   bannerVideos: VideoItem[];
   videoEditingVideos: VideoItem[];
   aerialVideos: VideoItem[];
+  promoVideos: PromoVideo[];
   digitalCards: DigitalCardItem[];
   tours: TourItem[];
   bannerImages: BannerImage[];

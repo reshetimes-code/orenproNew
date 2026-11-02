@@ -14,6 +14,7 @@ const services = [
   { href: "/virtual-tours-360", title: "סיורים וירטואליים ב-360", image: "/images/services/tours-360.jpg" },
   { href: "/banners-animation", title: "באנרים ואנימציה", image: "/images/services/banners.jpg" },
   { href: "/video-editing", title: "עריכת סרטים", image: "/images/services/video-editing.jpg" },
+  { href: "/promo-videos", title: "סרטוני פרסום", image: "/images/videos/fiesta.jpg" },
   { href: "/aerial-photography", title: "צילומי אוויר ברחפן", image: "/images/services/aerial.jpg" },
 ];
 

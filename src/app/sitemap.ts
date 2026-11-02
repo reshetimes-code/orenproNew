@@ -10,6 +10,7 @@ const routes = [
   "/banners-animation",
   "/video-editing",
   "/aerial-photography",
+  "/promo-videos",
   "/contact",
   "/accessibility",
   "/privacy",

@@ -34,5 +34,6 @@ export const navItems = [
     href: "/video-editing",
     children: [{ label: "צילומי אוויר ברחפן", href: "/aerial-photography" }],
   },
+  { label: "סרטוני פרסום", href: "/promo-videos" },
   { label: "חשבונית אישי", href: "https://invoice.34-165-183-164.sslip.io" },
 ] as const;

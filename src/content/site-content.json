@@ -600,5 +600,49 @@
       "image": "/images/cardtimes-clients/ct-7e5c99fc.png",
       "url": "https://cardtimes.co.il/%d7%a4%d7%9c%d7%93-%d7%90%d7%91%d7%99%d7%a8%d7%95%d7%9f/"
     }
+  ],
+  "promoVideos": [
+    {
+      "slug": "fiesta",
+      "title": "פיאסטה",
+      "src": "/images/videos/fiesta.mp4",
+      "poster": "/images/videos/fiesta.jpg"
+    },
+    {
+      "slug": "fiesta-maya",
+      "title": "פיאסטה - מאיה",
+      "src": "/images/videos/fiesta-maya.mp4",
+      "poster": "/images/videos/fiesta-maya.jpg"
+    },
+    {
+      "slug": "fiesta-private-events",
+      "title": "פיאסטה - הזמנות פרטיות",
+      "src": "/images/videos/fiesta-private-events-tiktok.mp4",
+      "poster": "/images/videos/fiesta-private-events-tiktok.jpg"
+    },
+    {
+      "slug": "songo",
+      "title": "SONGO",
+      "src": "/images/videos/songo.mp4",
+      "poster": "/images/videos/songo.jpg"
+    },
+    {
+      "slug": "morinside",
+      "title": "MorInside",
+      "src": "/images/videos/morinside-tiktok.mp4",
+      "poster": "/images/videos/morinside-tiktok.jpg"
+    },
+    {
+      "slug": "personal-design",
+      "title": "עיצוב אישי",
+      "src": "/images/videos/personal-design.mp4",
+      "poster": "/images/videos/personal-design.jpg"
+    },
+    {
+      "slug": "promo-final",
+      "title": "סרטון פרסום",
+      "src": "/images/videos/final-nowh.mp4",
+      "poster": "/images/videos/final-nowh.jpg"
+    }
   ]
 }
