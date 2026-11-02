@@ -51,6 +51,16 @@ export default function HomePage() {
               <ArrowLeft size={18} />
             </Link>
           </div>
+          <div className="relative mx-auto mt-10 aspect-[3/1] max-w-5xl overflow-hidden rounded-2xl border border-border">
+            <Image
+              src="/images/about/banner.jpg"
+              alt="אורן שפייזר - טכנולוגיה, פיתוח ופתרונות AI"
+              fill
+              priority
+              className="object-cover"
+              sizes="(min-width: 1024px) 1024px, 100vw"
+            />
+          </div>
         </div>
       </section>
 
@@ -60,18 +70,6 @@ export default function HomePage() {
           {services.map((s) => (
             <ServiceTile key={s.href} {...s} />
           ))}
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
-        <div className="relative aspect-[3/1] overflow-hidden rounded-2xl border border-border">
-          <Image
-            src="/images/about/banner.jpg"
-            alt="אורן שפייזר - טכנולוגיה, פיתוח ופתרונות AI"
-            fill
-            className="object-cover"
-            sizes="(min-width: 1152px) 1152px, 100vw"
-          />
         </div>
       </section>
 
