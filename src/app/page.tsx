@@ -25,7 +25,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden border-b border-border">
         <HeroVideoSlider videoIds={HERO_VIDEO_IDS} />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/60" />
-        <div className="relative z-10 mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 sm:py-28">
+        <div className="relative z-10 mx-auto max-w-6xl px-4 py-14 text-center sm:px-6 sm:py-28">
           <h1 className="text-4xl font-extrabold leading-tight sm:text-6xl">
             בניית אתרים <span className="text-gradient">ומערכות</span> לעסק שלך
           </h1>
@@ -51,7 +51,7 @@ export default function HomePage() {
               <ArrowLeft size={18} />
             </Link>
           </div>
-          <div className="relative mx-auto mt-10 aspect-[3/1] max-w-5xl overflow-hidden rounded-2xl border border-border">
+          <div className="relative -mx-4 mt-8 aspect-[3/1] overflow-hidden border-y border-border sm:mx-auto sm:mt-10 sm:max-w-5xl sm:rounded-2xl sm:border">
             <Image
               src="/images/about/banner.jpg"
               alt="אורן שפייזר - טכנולוגיה, פיתוח ופתרונות AI"
