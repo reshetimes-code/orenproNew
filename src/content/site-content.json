@@ -661,6 +661,12 @@
       "title": "סרטון פרסום - גרסה סופית",
       "src": "/images/videos/final-version.mp4",
       "poster": "/images/videos/final-version.jpg"
+    },
+    {
+      "slug": "fiesta-leads-update",
+      "title": "סרטון פרסום - עדכון לידים פיאסטה",
+      "src": "/images/videos/fiesta-leads-update.mp4",
+      "poster": "/images/videos/fiesta-leads-update.jpg"
     }
   ]
 }
