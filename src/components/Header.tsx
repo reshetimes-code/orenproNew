@@ -6,7 +6,15 @@ import Image from "next/image";
 import { Menu, X, ChevronDown, MessageCircle } from "lucide-react";
 import { navItems, siteConfig } from "@/lib/site-config";
 
+const topLinks = navItems.filter((i) => i.href === "/" || i.href === "/about");
+const accountLink = navItems.find((i) => i.href.startsWith("http"));
+// everything between "about" and the external account link goes under one dropdown
+const serviceLinks: { label: string; href: string }[] = navItems
+  .filter((i) => i.href !== "/" && i.href !== "/about" && !i.href.startsWith("http"))
+  .flatMap((i) => [{ label: i.label, href: i.href }, ...("children" in i && i.children ? [...i.children] : [])]);
+
 export default function Header() {
+  const [openServices, setOpenServices] = useState(false);
   const [open, setOpen] = useState(false);
   const [openSub, setOpenSub] = useState(false);
 
@@ -24,34 +32,65 @@ export default function Header() {
           />
         </Link>
 
-        <nav className="hidden flex-nowrap items-center gap-0.5 xl:flex">
-          {navItems.map((item) => (
-            <div key={item.href} className="group relative shrink-0">
-              <Link
-                href={item.href}
-                {...(item.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                className="flex items-center gap-1 whitespace-nowrap rounded-md px-2 py-2.5 text-[15px] font-semibold text-foreground/85 transition-colors hover:bg-white/5 hover:text-brand-cyan"
-              >
-                {item.label}
-                {"children" in item && item.children ? (
-                  <ChevronDown size={16} className="opacity-60" />
-                ) : null}
-              </Link>
-              {"children" in item && item.children ? (
-                <div className="invisible absolute right-0 top-full z-10 min-w-[220px] rounded-lg border border-border bg-surface p-1 opacity-0 shadow-xl transition-all group-hover:visible group-hover:opacity-100">
-                  {item.children.map((child) => (
-                    <Link
-                      key={child.href}
-                      href={child.href}
-                      className="block rounded-md px-3 py-2.5 text-base text-foreground/85 hover:bg-white/5 hover:text-brand-cyan"
-                    >
-                      {child.label}
-                    </Link>
-                  ))}
-                </div>
-              ) : null}
-            </div>
+        <nav aria-label="ניווט ראשי" className="hidden flex-nowrap items-center gap-1 xl:flex">
+          {topLinks.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              {...(item.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              className="whitespace-nowrap rounded-md px-3 py-2.5 text-base font-semibold text-foreground/85 transition-colors hover:bg-white/5 hover:text-brand-cyan"
+            >
+              {item.label}
+            </Link>
           ))}
+
+          <div
+            className="relative"
+            onMouseEnter={() => setOpenServices(true)}
+            onMouseLeave={() => setOpenServices(false)}
+            onBlur={(e) => {
+              if (!e.currentTarget.contains(e.relatedTarget)) setOpenServices(false);
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Escape") setOpenServices(false);
+            }}
+          >
+            <button
+              type="button"
+              aria-haspopup="true"
+              aria-expanded={openServices}
+              onClick={() => setOpenServices((v) => !v)}
+              className="flex items-center gap-1 whitespace-nowrap rounded-md px-3 py-2.5 text-base font-semibold text-foreground/85 transition-colors hover:bg-white/5 hover:text-brand-cyan"
+            >
+              השירותים שלנו
+              <ChevronDown size={16} className={`opacity-60 transition ${openServices ? "rotate-180" : ""}`} />
+            </button>
+            {openServices ? (
+              <div className="absolute right-0 top-full z-10 min-w-[260px] rounded-lg border border-border bg-surface p-1 shadow-xl">
+                {serviceLinks.map((child) => (
+                  <Link
+                    key={child.href}
+                    href={child.href}
+                    onClick={() => setOpenServices(false)}
+                    className="block rounded-md px-3 py-2.5 text-base text-foreground/85 hover:bg-white/5 hover:text-brand-cyan"
+                  >
+                    {child.label}
+                  </Link>
+                ))}
+              </div>
+            ) : null}
+          </div>
+
+          {accountLink ? (
+            <Link
+              href={accountLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whitespace-nowrap rounded-md px-3 py-2.5 text-base font-semibold text-foreground/85 transition-colors hover:bg-white/5 hover:text-brand-cyan"
+            >
+              {accountLink.label}
+            </Link>
+          ) : null}
         </nav>
 
         <a

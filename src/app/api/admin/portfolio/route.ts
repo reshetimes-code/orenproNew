@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { commitFiles, getFileContent } from "@/lib/github";
 import { extFromMime, slugify } from "@/lib/slugify";
+import { imageError, readJson, safeHttpUrl } from "@/lib/validate";
 import type { SiteContent } from "@/content/types";
 
 const CONTENT_PATH = "src/content/site-content.json";
@@ -16,6 +17,10 @@ export async function POST(request: Request) {
   if (!name || !url || !file) {
     return NextResponse.json({ error: "חובה למלא שם, קישור ותמונה" }, { status: 400 });
   }
+  const safeUrl = safeHttpUrl(url);
+  if (!safeUrl) return NextResponse.json({ error: "קישור לא תקין" }, { status: 400 });
+  const fileErr = imageError(file);
+  if (fileErr) return NextResponse.json({ error: fileErr }, { status: 400 });
 
   const raw = await getFileContent(CONTENT_PATH);
   const content: SiteContent = JSON.parse(raw);
@@ -29,7 +34,7 @@ export async function POST(request: Request) {
   content.portfolio.push({
     slug,
     name,
-    url,
+    url: safeUrl,
     image: `/images/portfolio/${slug}.${ext}`,
     ...(tag ? { tag } : {}),
     ...(tagColor ? { tagColor } : {}),
@@ -47,7 +52,9 @@ export async function POST(request: Request) {
 }
 
 export async function DELETE(request: Request) {
-  const { slug } = await request.json();
+  const body = await readJson<{ slug?: string }>(request);
+  const slug = body?.slug;
+  if (!slug) return NextResponse.json({ error: "בקשה לא תקינה" }, { status: 400 });
   const raw = await getFileContent(CONTENT_PATH);
   const content: SiteContent = JSON.parse(raw);
 

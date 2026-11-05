@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Accessibility, X, Plus, Minus, Contrast, Underline, RotateCcw } from "lucide-react";
+import { Accessibility, X, Plus, Minus, Contrast, Underline, RotateCcw, Pause } from "lucide-react";
 
 const STORAGE_KEY = "a11y-prefs";
 
@@ -9,15 +9,17 @@ type Prefs = {
   fontStep: number;
   highContrast: boolean;
   underlineLinks: boolean;
+  stopMotion: boolean;
 };
 
-const defaultPrefs: Prefs = { fontStep: 0, highContrast: false, underlineLinks: false };
+const defaultPrefs: Prefs = { fontStep: 0, highContrast: false, underlineLinks: false, stopMotion: false };
 
 function applyPrefs(prefs: Prefs) {
   const root = document.documentElement;
   root.style.fontSize = prefs.fontStep === 0 ? "" : `${100 + prefs.fontStep * 12.5}%`;
   root.classList.toggle("a11y-high-contrast", prefs.highContrast);
   root.classList.toggle("a11y-underline-links", prefs.underlineLinks);
+  root.classList.toggle("a11y-stop-motion", prefs.stopMotion);
 }
 
 export default function AccessibilityWidget() {
@@ -28,7 +30,7 @@ export default function AccessibilityWidget() {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
-        const parsed = JSON.parse(saved) as Prefs;
+        const parsed = { ...defaultPrefs, ...(JSON.parse(saved) as Partial<Prefs>) };
         setPrefs(parsed);
         applyPrefs(parsed);
       }
@@ -36,6 +38,15 @@ export default function AccessibilityWidget() {
       // ignore unavailable storage
     }
   }, []);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
 
   function update(next: Prefs) {
     setPrefs(next);
@@ -57,7 +68,7 @@ export default function AccessibilityWidget() {
         >
           <div className="mb-3 flex items-center justify-between">
             <h2 className="text-sm font-semibold">הגדרות נגישות</h2>
-            <button aria-label="סגור הגדרות נגישות" onClick={() => setOpen(false)}>
+            <button type="button" aria-label="סגור הגדרות נגישות" onClick={() => setOpen(false)}>
               <X size={18} />
             </button>
           </div>
@@ -108,6 +119,19 @@ export default function AccessibilityWidget() {
               קו תחתון לקישורים
             </span>
             <span>{prefs.underlineLinks ? "פעיל" : "כבוי"}</span>
+          </button>
+
+          <button
+            type="button"
+            className="mb-2 flex w-full items-center justify-between rounded-md border border-border px-3 py-2 text-sm hover:border-brand-cyan"
+            aria-pressed={prefs.stopMotion}
+            onClick={() => update({ ...prefs, stopMotion: !prefs.stopMotion })}
+          >
+            <span className="flex items-center gap-2">
+              <Pause size={16} />
+              עצירת אנימציות וסרטוני רקע
+            </span>
+            <span>{prefs.stopMotion ? "פעיל" : "כבוי"}</span>
           </button>
 
           <button

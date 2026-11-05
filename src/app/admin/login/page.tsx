@@ -32,13 +32,17 @@ export default function AdminLoginPage() {
     <div className="mx-auto flex min-h-[70vh] max-w-sm flex-col justify-center px-4">
       <h1 className="mb-6 text-center text-2xl font-bold">כניסה לפאנל ניהול</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
+        <label htmlFor="admin-password" className="sr-only">
+          סיסמה
+        </label>
         <input
+          id="admin-password"
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="סיסמה"
           autoFocus
-          className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm outline-none focus:border-brand-cyan"
+          className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-brand-cyan"
         />
         {error ? <p className="text-sm text-red-400">{error}</p> : null}
         <button

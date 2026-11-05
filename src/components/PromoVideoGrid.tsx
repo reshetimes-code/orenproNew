@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Maximize2, X } from "lucide-react";
 import type { PromoVideo } from "@/content";
 
@@ -9,6 +9,18 @@ type FullscreenVideo = HTMLVideoElement & { webkitEnterFullscreen?: () => void }
 function PromoVideoCard({ video, index }: { video: PromoVideo; index: number }) {
   const ref = useRef<FullscreenVideo>(null);
   const [expanded, setExpanded] = useState(false);
+
+  useEffect(() => {
+    if (!expanded) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setExpanded(false);
+        ref.current?.pause();
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [expanded]);
 
   async function openFullscreen() {
     const el = ref.current;
@@ -34,6 +46,9 @@ function PromoVideoCard({ video, index }: { video: PromoVideo; index: number }) 
 
   return (
     <div
+      role={expanded ? "dialog" : undefined}
+      aria-modal={expanded ? true : undefined}
+      aria-label={expanded ? video.title : undefined}
       className={
         expanded
           ? "fixed inset-0 z-[100] flex flex-col bg-black"

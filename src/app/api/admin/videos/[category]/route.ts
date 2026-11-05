@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { commitFiles, getFileContent } from "@/lib/github";
 import { extractYouTubeId } from "@/lib/slugify";
+import { readJson } from "@/lib/validate";
 import type { SiteContent } from "@/content/types";
 
 const CONTENT_PATH = "src/content/site-content.json";
@@ -17,12 +18,17 @@ export async function POST(request: Request, { params }: { params: Promise<{ cat
     return NextResponse.json({ error: "קטגוריה לא תקינה" }, { status: 400 });
   }
 
-  const { url, title } = await request.json();
+  const body = await readJson<{ url?: string; title?: string }>(request);
+  const url = body?.url;
+  const title = body?.title;
   if (!url?.trim()) {
     return NextResponse.json({ error: "חובה למלא קישור יוטיוב" }, { status: 400 });
   }
 
   const id = extractYouTubeId(url);
+  if (!/^[a-zA-Z0-9_-]{6,20}$/.test(id)) {
+    return NextResponse.json({ error: "קישור יוטיוב לא תקין" }, { status: 400 });
+  }
 
   const raw = await getFileContent(CONTENT_PATH);
   const content: SiteContent = JSON.parse(raw);
@@ -43,7 +49,9 @@ export async function DELETE(request: Request, { params }: { params: Promise<{ c
     return NextResponse.json({ error: "קטגוריה לא תקינה" }, { status: 400 });
   }
 
-  const { index } = await request.json();
+  const body = await readJson<{ index?: number }>(request);
+  const index = body?.index;
+  if (typeof index !== "number") return NextResponse.json({ error: "בקשה לא תקינה" }, { status: 400 });
 
   const raw = await getFileContent(CONTENT_PATH);
   const content: SiteContent = JSON.parse(raw);

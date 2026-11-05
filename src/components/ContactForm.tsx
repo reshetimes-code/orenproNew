@@ -33,7 +33,7 @@ export default function ContactForm() {
           type="text"
           required
           autoComplete="name"
-          className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm outline-none focus:border-brand-cyan"
+          className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-brand-cyan"
         />
       </div>
 
@@ -47,7 +47,7 @@ export default function ContactForm() {
           type="tel"
           required
           autoComplete="tel"
-          className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm outline-none focus:border-brand-cyan"
+          className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-brand-cyan"
         />
       </div>
 
@@ -60,7 +60,7 @@ export default function ContactForm() {
           name="message"
           rows={5}
           required
-          className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm outline-none focus:border-brand-cyan"
+          className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm focus:border-brand-cyan"
         />
       </div>
 

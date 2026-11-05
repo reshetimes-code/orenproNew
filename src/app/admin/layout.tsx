@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import LogoutButton from "@/components/admin/LogoutButton";
 
@@ -9,6 +10,8 @@ const categories = [
   { href: "/admin/videos/videoEditingVideos", label: "וידאו - עריכת סרטים" },
   { href: "/admin/videos/aerialVideos", label: "וידאו - צילומי אוויר" },
 ];
+
+export const metadata: Metadata = { title: "פאנל ניהול", robots: { index: false, follow: false } };
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return (
