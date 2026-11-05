@@ -649,6 +649,18 @@
       "title": "סרטון פרסום",
       "src": "/images/videos/whatsapp-promo.mp4",
       "poster": "/images/videos/whatsapp-promo.jpg"
+    },
+    {
+      "slug": "full-with-girl",
+      "title": "סרטון פרסום - פיאסטה",
+      "src": "/images/videos/full-with-girl.mp4",
+      "poster": "/images/videos/full-with-girl.jpg"
+    },
+    {
+      "slug": "final-version",
+      "title": "סרטון פרסום - גרסה סופית",
+      "src": "/images/videos/final-version.mp4",
+      "poster": "/images/videos/final-version.jpg"
     }
   ]
 }
