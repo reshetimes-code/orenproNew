@@ -18,7 +18,7 @@ export default function PromoVideosPage() {
         image="/images/services/video-editing.jpg"
       />
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <h2 className="mb-8 text-center text-2xl font-bold sm:text-3xl">תיק עבודות</h2>
+        <h2 className="mb-8 text-center text-2xl font-bold sm:text-3xl">דוגמאות לסרטוני פרסומת לעסקים</h2>
         <PromoVideoGrid items={promoVideos} />
       </div>
     </>
