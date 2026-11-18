@@ -25,6 +25,7 @@ export const siteConfig = {
 export const navItems = [
   { label: "עמוד הבית", href: "/" },
   { label: "נעים מאוד", href: "/about" },
+  { label: "פיתוח Full Stack", href: "/career" },
   { label: "בניית אתרים ומערכות", href: "/web-development" },
   { label: "כרטיסי ביקור דיגיטליים", href: "/digital-business-cards" },
   { label: "סיורים וירטואליים ב-360", href: "/virtual-tours-360" },

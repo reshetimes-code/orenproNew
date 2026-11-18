@@ -6,11 +6,11 @@ import Image from "next/image";
 import { Menu, X, ChevronDown, MessageCircle } from "lucide-react";
 import { navItems, siteConfig } from "@/lib/site-config";
 
-const topLinks = navItems.filter((i) => i.href === "/" || i.href === "/about");
+const topLinks = navItems.filter((i) => i.href === "/" || i.href === "/about" || i.href === "/career");
 const accountLink = navItems.find((i) => i.href.startsWith("http"));
 // everything between "about" and the external account link goes under one dropdown
 const serviceLinks: { label: string; href: string }[] = navItems
-  .filter((i) => i.href !== "/" && i.href !== "/about" && !i.href.startsWith("http"))
+  .filter((i) => i.href !== "/" && i.href !== "/about" && i.href !== "/career" && !i.href.startsWith("http"))
   .flatMap((i) => [{ label: i.label, href: i.href }, ...("children" in i && i.children ? [...i.children] : [])]);
 
 export default function Header() {
@@ -38,7 +38,7 @@ export default function Header() {
               key={item.href}
               href={item.href}
               {...(item.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-              className="whitespace-nowrap rounded-md px-3 py-2.5 text-base font-semibold text-foreground/85 transition-colors hover:bg-white/5 hover:text-brand-cyan"
+              className={`whitespace-nowrap rounded-md px-3 py-2.5 text-base font-semibold transition-colors hover:bg-white/5 hover:text-brand-cyan ${item.href === "/career" ? "text-brand-orange" : "text-foreground/85"}`}
             >
               {item.label}
             </Link>

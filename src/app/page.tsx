@@ -64,6 +64,22 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-4 pt-12 sm:px-6">
+        <Link
+          href="/career"
+          className="group flex flex-col items-center justify-between gap-4 rounded-2xl border border-brand-orange/40 bg-surface p-6 text-center transition hover:border-brand-orange sm:flex-row sm:text-right"
+        >
+          <div>
+            <p className="text-sm font-semibold text-brand-orange">Full Stack · SaaS · Cloud</p>
+            <h2 className="mt-1 text-xl font-bold sm:text-2xl">מפתח מערכות ומוצרי SaaS? ראו את הפרויקטים החיים</h2>
+          </div>
+          <span className="flex shrink-0 items-center gap-2 rounded-full bg-brand-orange px-6 py-3 font-semibold text-black">
+            לתיק העבודות
+            <ArrowLeft size={18} />
+          </span>
+        </Link>
+      </section>
+
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <h2 className="mb-8 text-center text-2xl font-bold sm:text-3xl">השירותים שלנו</h2>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

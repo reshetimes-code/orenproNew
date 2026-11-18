@@ -37,7 +37,7 @@ const projects: Project[] = [
     url: "https://stannelclub.co.il/",
     summary: "מוצר הכולל אתר, מערכת ואפליקציה הזמינה להורדה ב-App Store.",
     points: ["אתר ומערכת ניהול", "אפליקציה ל-iOS"],
-    appStoreUrl: "https://apps.apple.com/us/app/stannel-business-club/id6824633206",
+    appStoreUrl: "/stannel-app",
   },
   {
     name: "SONGO",
