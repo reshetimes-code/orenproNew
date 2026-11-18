@@ -115,3 +115,26 @@ body {
 .a11y-underline-links a {
   text-decoration: underline !important;
 }
+
+/* career page */
+@keyframes career-fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes career-glow {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.08); }
+}
+.career-reveal { animation: career-fade-up 0.8s ease-out both; }
+.career-glow { animation: career-glow 7s ease-in-out infinite; }
+.career-grid-bg {
+  background-image:
+    linear-gradient(rgba(147, 160, 184, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(147, 160, 184, 0.07) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+}
+@media (prefers-reduced-motion: reduce) {
+  .career-reveal, .career-glow { animation: none; }
+}
