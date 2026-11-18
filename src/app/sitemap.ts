@@ -12,6 +12,7 @@ const routes = [
   "/aerial-photography",
   "/promo-videos",
   "/contact",
+  "/career",
   "/accessibility",
   "/privacy",
 ];
