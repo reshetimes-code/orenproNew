@@ -15,6 +15,7 @@ type Project = {
   summary: string;
   points: string[];
   appStoreUrl?: string;
+  shots?: { src: string; alt: string; w: number; h: number }[];
 };
 
 const projects: Project[] = [
@@ -29,6 +30,9 @@ const projects: Project[] = [
       "יומן אירועים, הסכמים וחתימה דיגיטלית",
       "אוטומציות הודעות",
     ],
+    shots: [
+      { src: "/images/career/fiesta-panel.png", alt: "FIESTA - פאנל הניהול האישי ליצירת הזמנות", w: 396, h: 778 },
+    ],
   },
   {
     name: "STANNEL CLUB",
@@ -37,6 +41,10 @@ const projects: Project[] = [
     summary: "מוצר הכולל אתר, מערכת ואפליקציה הזמינה להורדה ב-App Store.",
     points: ["אתר ומערכת ניהול", "אפליקציה ל-iOS"],
     appStoreUrl: "/stannel-app",
+    shots: [
+      { src: "/images/career/stannel-club-login.png", alt: "STANNEL CLUB - מסך התחברות באפליקציה", w: 373, h: 816 },
+      { src: "/images/career/stannel-club-admin.png", alt: "STANNEL CLUB - פאנל ניהול", w: 395, h: 825 },
+    ],
   },
   {
     name: "SONGO",
@@ -47,6 +55,10 @@ const projects: Project[] = [
       "בקשות שירים מהאורחים ל-DJ",
       "הרשמת משתמשים",
       "עמוד אירוע עם ספירה לאחור, ניווט ב-Waze והוספה ליומן",
+    ],
+    shots: [
+      { src: "/images/career/songo-landing.png", alt: "SONGO - עמוד הבית של הפלטפורמה", w: 379, h: 799 },
+      { src: "/images/career/songo-event.png", alt: "SONGO - עמוד אירוע עם בחירת שיר", w: 376, h: 802 },
     ],
   },
   {
@@ -273,7 +285,22 @@ export default function CareerPage() {
                     </span>
                   ) : null}
                 </div>
-                <h3 dir="ltr" className="mt-3 text-2xl font-extrabold">
+                {p.shots ? (
+                  <div className="mt-4 flex justify-center gap-3 rounded-xl bg-background/60 p-4">
+                    {p.shots.map((sh) => (
+                      <Image
+                        key={sh.src}
+                        src={sh.src}
+                        alt={sh.alt}
+                        width={sh.w}
+                        height={sh.h}
+                        sizes="(min-width: 768px) 180px, 45vw"
+                        className="h-auto w-[45%] max-w-[180px] rounded-2xl border border-border shadow-lg"
+                      />
+                    ))}
+                  </div>
+                ) : null}
+                <h3 dir="ltr" className="mt-4 text-2xl font-extrabold">
                   {p.name}
                 </h3>
                 <p className="text-sm font-semibold text-brand-orange">{p.tag}</p>
